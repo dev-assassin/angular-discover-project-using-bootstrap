@@ -46,6 +46,7 @@ a:hover {
     font-weight: bold;
     vertical-align: middle;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar-nav li {

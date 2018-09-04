@@ -17,6 +17,7 @@ export class HomepageComponent implements OnInit {
   text1: string;
   text2: string;
   lists: any;
+  links: any;
 
   constructor() {
     this.text1 = 'On Friday, our Oil City office received candy from a customer.';
@@ -38,6 +39,9 @@ export class HomepageComponent implements OnInit {
         text: 'We\'re pleased to announce that we will acquire Union Community Bank, headquartered in Lancaster County, Pennsylvania. ' +
           'The conversion is expected to take place the first quarter of 2019.'
       }
+    ];
+    this.links = [
+      'About Northwest Investor Relations', 'Visual Directory Security Center ', 'Visual Directory'
     ];
   }
 

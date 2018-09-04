@@ -33,3 +33,16 @@
     font-size: 18px;
     color: green;
 }
+
+hr {
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+}
+
+.form-control {
+    margin-bottom: 20px !important;
+}
+
+.right {
+    float: right;
+}

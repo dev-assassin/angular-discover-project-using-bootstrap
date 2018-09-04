@@ -6,6 +6,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SwiperModule } from 'angular2-useful-swiper';
+import { UiSwitchModule } from 'ngx-toggle-switch';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SwiperModule } from 'angular2-useful-swiper';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    UiSwitchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

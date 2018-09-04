@@ -29,5 +29,25 @@
         <p class="additional">Read more</p>
       </div>
     </div>
+    <hr />
+    <div class="row">
+      <div class="col-6">
+        <p class="content">Useful Links</p>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12" *ngFor="let link of links">
+            <p>{{link}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 offset-2">
+        <p class="header">How can we improve Discover?</p>
+        <input type="text" class="form-control" placeholder="Enter Feedback..." />
+        <form class="form-inline">
+          <ui-switch labelOn="On" labelOff="Off" reverse></ui-switch>
+          <span style="margin-left: 10px;"><h6>Anonymous</h6></span>
+          <button type="submit" class="btn btn-success right">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
