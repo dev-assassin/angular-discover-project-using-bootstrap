@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <p class="content">Useful Links</p>
+      <div class="row">
+        <div class="col-sm-4 col-xs-12" *ngFor="let link of links">
+          <p>{{link}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 offset-sm-2 col-xs-12">
+      <p class="header">How can we improve Discover?</p>
+      <input type="text" class="form-control" placeholder="Enter Feedback..." />
+      <div class="submit">
+        <ui-switch labelOn="On" labelOff="Off" reverse></ui-switch>
+        <span class="anonymous">Anonymous</span>
+        <button type="submit" class="btn btn-success float-right">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 offset-sm-4 col-xs-12">
+      <p class="help">Need Help?</p>
+      <p class="contact">_TechSupportHelpDesk@NWSB.nbsc.com</p>
+      <p class="contact">Phone: On Campus Ext # 85744 or 1 877 300 5744</p>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <p class="header">Questions?</p>
+      <div class="row">
+        <div class="col-3">
+          <img src="assets/images/Kristan.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-9">
+          <p class="">Kristan Garvey</p>
+          <h6 style="font-size: 12px;">Communications Specialist</h6>
+          <i class="fa fa-comments-o icons"></i>
+          <i class="fa fa-phone icons"></i>
+          <i class="fa fa-envelope-o icons"></i>
+          <i class="fa fa-video-camera icons"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="brand">© 2018 Northwest Bank /// All Rights Reserved</p>
+    <!-- <img src="assets/images/footer.png" class="img-fluid" alt="footer" style="text-align: center;"> -->
+  </div>
+</div>
