@@ -14,16 +14,11 @@ export class HomepageComponent implements OnInit {
     prevButton: '.swiper-button-prev',
     spaceBetween: 30
   };
-  text1: string;
-  text2: string;
   lists: any;
   links: any;
+  texts: any;
 
   constructor() {
-    this.text1 = 'On Friday, our Oil City office received candy from a customer.';
-    this.text2 = 'Manager Kim Reddinger said she was shocked when a longtime customer showed up at the branch bearing ' +
-      'gifts in the form of candies for everyone. "John was sure to cover everyone\'s sweet tooth with this assortment!" ' +
-      'she said as she smiled and held up the sacks of candy.';
     this.lists = [
       {
         title: 'Here\'s what\'s new with Beneficial Owner',
@@ -42,6 +37,26 @@ export class HomepageComponent implements OnInit {
     ];
     this.links = [
       'About Northwest Investor Relations', 'Visual Directory Security Center ', 'Visual Directory'
+    ];
+    this.texts = [
+      {
+        class: 'title',
+        data: 'Oil City receives Gift'
+      },
+      {
+        class: 'content',
+        data: 'On Friday, our Oil City office received candy from a customer.'
+      },
+      {
+        class: 'content',
+        data: 'Manager Kim Reddinger said she was shocked when a longtime customer showed up at the branch bearing ' +
+          'gifts in the form of candies for everyone. "John was sure to cover everyone\'s sweet tooth with this assortment!" ' +
+          'she said as she smiled and held up the sacks of candy.'
+      },
+      {
+        class: 'additional',
+        data: 'Read more'
+      }
     ];
   }
 
