@@ -1,5 +1,6 @@
 .top-header {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 a img, .avatar {
@@ -14,5 +15,11 @@ a {
 }
 
 .personal {
+    font-weight: bold;
+    float: right;
+}
+
+.arrow {
+    color: green;
     font-weight: bold;
 }
