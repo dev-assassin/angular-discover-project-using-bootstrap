@@ -12,14 +12,65 @@ a img, .avatar {
 a {
     color: #333 !important;
     font-weight: bold;
+    font-size: 24px;
+}
+
+a span {
+    font-size: 38px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .personal {
-    font-weight: bold;
+    /* font-weight: bold; */
     float: right;
+    font-size: 22px;
+}
+
+.personal span {
+    vertical-align: middle;
+    align-items: center;
 }
 
 .arrow {
     color: green;
     font-weight: bold;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin-right: 30px;
+}
+
+.last {
+    margin-right: 300px !important;
+}
+
+.form-inline .form-control {
+    width: 420px !important;
+}
+
+.inner-addon { 
+    position: relative; 
+}
+
+.inner-addon .fa-search {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.right-addon .fa-search { right: 20px;}
+
+.right-addon input { padding-right: 30px; }
+
+.form-control {
+    border: none !important;
+    border-radius: 0% !important;
+    border-bottom: 1px solid green !important;
 }
