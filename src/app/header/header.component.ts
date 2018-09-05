@@ -16,6 +16,24 @@ export class HeaderComponent implements OnInit {
   reports: any;
   teams: any;
   lists: any;
+  text2: string;
+  personals: any;
+  channels: any;
+  resources: any;
+  tables: any;
+  text3: string;
+  bpersonals: any;
+  brendings: any;
+  deliveries: any;
+  rates: any;
+  advisors: any;
+  invests: any;
+  thirds: any;
+  text4: string;
+  text5: string;
+  insures: any;
+  lasts: any;
+  svgs: any;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -161,18 +179,7 @@ export class HeaderComponent implements OnInit {
       }
     ];
     this.teams = [
-      {
-        title: 'My Teams',
-        texts: [
-          'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
-        ]
-      },
-      {
-        title: 'My Projects',
-        texts: [
-          'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
-        ]
-      }
+      'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
     ];
     this.lists = [
       {
@@ -186,10 +193,225 @@ export class HeaderComponent implements OnInit {
         ]
       }
     ];
+    this.text2 = 'At Northwest, we offer a variety of checking and savings accounts and business cash management ' +
+      'services with easy-to-understand terms and the secure, convenient access our customers are looking for.';
+    this.personals = [
+      {
+        title: 'Personal',
+        texts: [
+          'Checking', 'Savings', 'CDs', 'IRAs and HSAs', 'Safe Deposit Boxes'
+        ]
+      },
+      {
+        title: 'Business',
+        texts: [
+          'EDI Reporting', 'Positive Pay', 'Wire Transfers', 'Lockbox Services', 'Safe Deposit Boxes'
+        ]
+      }
+    ];
+    this.channels = [
+      'Online & Mobile Banking', 'Cards & ATMs', 'Bankline', 'Checks'
+    ];
+    this.resources = [
+      'Accounts Processing Manual', 'Knowledge Bases', 'Operations Manual', 'Policies & Procedures'
+    ];
+    this.tables = [
+      {
+        des: 'Interests Rate #1',
+        per: '1.2%'
+      },
+      {
+        des: 'Interests Rate #2',
+        per: '2.3%'
+      },
+      {
+        des: 'Interests Rate #3',
+        per: '3.4%'
+      },
+      {
+        des: 'Interests Rate #4',
+        per: '4.5%'
+      },
+      {
+        des: 'Interests Rate #5',
+        per: '5.6%'
+      },
+      {
+        des: 'Interests Rate #6',
+        per: '6.7%'
+      }
+    ];
+    this.rates = [
+      {
+        des: 'Lending Rate #1',
+        per: '1.2%'
+      },
+      {
+        des: 'Lending Rate #2',
+        per: '2.3%'
+      },
+      {
+        des: 'Lending Rate #3',
+        per: '3.4%'
+      },
+      {
+        des: 'Lending Rate #4',
+        per: '4.5%'
+      },
+      {
+        des: 'Lending Rate #5',
+        per: '5.6%'
+      },
+      {
+        des: 'Lending Rate #6',
+        per: '6.7%'
+      }
+    ];
+    this.text3 = 'Whether it\'s a new home or business, we can help make out customers\' dreams a reality.';
+    this.bpersonals = [
+      'Mortgage', 'Home Equity', 'Personal Loans', 'Credit Cards'
+    ];
+    this.brendings = [
+      {
+        title: 'Business',
+        texts: [
+          'Commercial Loans', 'Small Business Loans', 'Credit Cards'
+        ]
+      },
+      {
+        title: 'Indirect Lending',
+        texts: [
+          'Indirect Lending'
+        ]
+      }
+    ];
+    this.deliveries = [
+      'Online & Mobile Banking', 'Bankline'
+    ];
+    this.advisors = [
+      {
+        title: 'Northwest Advisors',
+        text1: 'Through LPL Financial, the largest broker dealer in the country, we offer a full range of high-quality ' +
+          'investment products and portfolio planning services.',
+        text2: 'Our licensed financial advisors generally work with retail banking customers to buy and sell ' +
+          'financial securities like stocks, bonds and mutual funds, as well as life insurance and annuities. ' +
+          'Our financial advisors also help individuals open and manage traditional and Roth IRAs.'
+      },
+      {
+        title: 'Trust Services',
+        text1: 'When clients place assets in a trust, or legal contract that outlines who the beneficiaries are ' +
+          'and how they can use the assets, and appoint Northwest to serve as trustee or fiduciary, our trust ' +
+          'officers administer and invest the assets of the trust in the best interest of the beneficiary.',
+        text2: 'We also help businesses map out succession plans, work with endowments and foundations and ' +
+          'provide legacy planning and escrow services.'
+      }
+    ];
+    this.invests = [
+      {
+        title: 'Our Services',
+        texts: [
+          'Investment Management'
+        ]
+      },
+      {
+        title: 'Our Services',
+        texts: [
+          'Trust Services', 'Retirement Plan Services', 'Employee Benefits'
+        ]
+      }
+    ];
+    this.thirds = [
+      {
+        title: 'Resources',
+        texts: [
+          'Northwest Advisors Referral Playbook', 'Northwest Advisors Recognizing Opportunities Presentation',
+          'Calculate: How much can I contribute to my retirement plan each year?'
+        ]
+      },
+      {
+        title: 'Resources',
+        texts: [
+          'Trust Recognizing Opportunities Presentation', 'Article: Living Trust or Will? Is it right for me?'
+        ]
+      }
+    ];
+    this.text4 = 'Northwest Insurance Services is a wholly-owned subsidiary of Northwest Bank, offering property ' +
+      'and casualty, life, disability and long-term care insurance, as well as group health, life and disability employee benefits.';
+    this.text5 = 'We\'re independent insurance brokers, which means we offer insurance provided by a number of ' +
+      'carriers, like BlueCross BlueShield, Lincoln Financial, Travelers and Liberty Mutual';
+    this.insures = [
+      'Property & Casualty', 'Life, Disability and Long-term Care', 'Employee Benefits'
+    ];
+    this.lasts = [
+      {
+        texts: [
+          'Northwest Insurance Services', 'Recognizing Insurance Opportunities', 'Property Casualty Presentation'
+        ]
+      },
+      {
+        texts: [
+          'Employee Benefits Presentation', 'Northwest 360', 'Online Insurance quote center'
+        ]
+      }
+    ];
+    this.svgs = [
+      {
+        img: 'assets/images/icons/icon-tools-rates.svg',
+        alt: 'Rates',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-manuals.svg',
+        alt: 'Manuals & Knowledge',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-policies.svg',
+        alt: 'Policies',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-signature.svg',
+        alt: 'Signature',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-POD.svg',
+        alt: 'Northwest POD',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-account.svg',
+        alt: 'Account Processing',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-operations.svg',
+        alt: 'Northwest Operations',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      }
+    ];
   }
 
   ngOnInit() {
     console.log(this.departments[0].titles[0].texts, '---');
+  }
+
+  serach() {
+    console.log('search');
   }
 
 }

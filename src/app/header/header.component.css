@@ -69,6 +69,7 @@ a:hover {
     position: absolute;
     padding: 10px;
     pointer-events: none;
+    cursor: pointer;
 }
 
 .right-addon .fa-search { right: 20px;}
@@ -88,6 +89,10 @@ a:hover {
 .modal-dialog {
     max-width: 1150px !important;
     margin-top: 100px !important;
+}
+
+.bank {
+    margin-top: 210px !important;
 }
 
 .header {
@@ -142,4 +147,32 @@ a:hover {
     font-weight: 400;
     border-bottom: 1px solid;
     cursor: pointer;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.advisor {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.svg {
+    width: 25px;
+    margin: 15px 15px 0 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.icon-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    vertical-align: middle;
+    align-items: center;
 }
