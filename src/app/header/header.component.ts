@@ -26,6 +26,13 @@ export class HeaderComponent implements OnInit {
   brendings: any;
   deliveries: any;
   rates: any;
+  advisors: any;
+  invests: any;
+  thirds: any;
+  text4: string;
+  text5: string;
+  insures: any;
+  lasts: any;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -290,6 +297,72 @@ export class HeaderComponent implements OnInit {
     ];
     this.deliveries = [
       'Online & Mobile Banking', 'Bankline'
+    ];
+    this.advisors = [
+      {
+        title: 'Northwest Advisors',
+        text1: 'Through LPL Financial, the largest broker dealer in the country, we offer a full range of high-quality ' +
+          'investment products and portfolio planning services.',
+        text2: 'Our licensed financial advisors generally work with retail banking customers to buy and sell ' +
+          'financial securities like stocks, bonds and mutual funds, as well as life insurance and annuities. ' +
+          'Our financial advisors also help individuals open and manage traditional and Roth IRAs.'
+      },
+      {
+        title: 'Trust Services',
+        text1: 'When clients place assets in a trust, or legal contract that outlines who the beneficiaries are ' +
+          'and how they can use the assets, and appoint Northwest to serve as trustee or fiduciary, our trust ' +
+          'officers administer and invest the assets of the trust in the best interest of the beneficiary.',
+        text2: 'We also help businesses map out succession plans, work with endowments and foundations and ' +
+          'provide legacy planning and escrow services.'
+      }
+    ];
+    this.invests = [
+      {
+        title: 'Our Services',
+        texts: [
+          'Investment Management'
+        ]
+      },
+      {
+        title: 'Our Services',
+        texts: [
+          'Trust Services', 'Retirement Plan Services', 'Employee Benefits'
+        ]
+      }
+    ];
+    this.thirds = [
+      {
+        title: 'Resources',
+        texts: [
+          'Northwest Advisors Referral Playbook', 'Northwest Advisors Recognizing Opportunities Presentation',
+          'Calculate: How much can I contribute to my retirement plan each year?'
+        ]
+      },
+      {
+        title: 'Resources',
+        texts: [
+          'Trust Recognizing Opportunities Presentation', 'Article: Living Trust or Will? Is it right for me?'
+        ]
+      }
+    ];
+    this.text4 = 'Northwest Insurance Services is a wholly-owned subsidiary of Northwest Bank, offering property ' +
+      'and casualty, life, disability and long-term care insurance, as well as group health, life and disability employee benefits.';
+    this.text5 = 'We\'re independent insurance brokers, which means we offer insurance provided by a number of ' +
+      'carriers, like BlueCross BlueShield, Lincoln Financial, Travelers and Liberty Mutual';
+    this.insures = [
+      'Property & Casualty', 'Life, Disability and Long-term Care', 'Employee Benefits'
+    ];
+    this.lasts = [
+      {
+        texts: [
+          'Northwest Insurance Services', 'Recognizing Insurance Opportunities', 'Property Casualty Presentation'
+        ]
+      },
+      {
+        texts: [
+          'Employee Benefits Presentation', 'Northwest 360', 'Online Insurance quote center'
+        ]
+      }
     ];
   }
 

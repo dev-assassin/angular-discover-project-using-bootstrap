@@ -153,3 +153,8 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
+.advisor {
+    width: 250px;
+    margin-bottom: 20px;
+}
