@@ -33,6 +33,7 @@ export class HeaderComponent implements OnInit {
   text5: string;
   insures: any;
   lasts: any;
+  svgs: any;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -178,18 +179,7 @@ export class HeaderComponent implements OnInit {
       }
     ];
     this.teams = [
-      {
-        title: 'My Teams',
-        texts: [
-          'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
-        ]
-      },
-      {
-        title: 'My Projects',
-        texts: [
-          'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
-        ]
-      }
+      'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
     ];
     this.lists = [
       {
@@ -364,10 +354,64 @@ export class HeaderComponent implements OnInit {
         ]
       }
     ];
+    this.svgs = [
+      {
+        img: 'assets/images/icons/icon-tools-rates.svg',
+        alt: 'Rates',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-manuals.svg',
+        alt: 'Manuals & Knowledge',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-policies.svg',
+        alt: 'Policies',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-signature.svg',
+        alt: 'Signature',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-POD.svg',
+        alt: 'Northwest POD',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-account.svg',
+        alt: 'Account Processing',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-operations.svg',
+        alt: 'Northwest Operations',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        alt: 'Custom Tool',
+      }
+    ];
   }
 
   ngOnInit() {
     console.log(this.departments[0].titles[0].texts, '---');
+  }
+
+  serach() {
+    console.log('search');
   }
 
 }

@@ -39,7 +39,7 @@
       </li>
     </ul>
     <form class="form-inline inner-addon right-addon">
-      <i class="fa fa-search"></i>
+      <i class="fa fa-search" (click)="search()"></i>
       <input type="search" class="form-control" placeholder="What are you looking for?">
       <i class="fa fa-angle-down arrow"></i>
     </form>
@@ -117,6 +117,28 @@
                 <h6 class="header" style="border-bottom: 2px solid #085B02;">Recently Visited</h6>
                 <h6 class="text" *ngFor="let visit of visits">{{visit}}</h6>
               </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #74C447;">My Teams</h6>
+                <h6 class="text" *ngFor="let team of teams">{{team}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">
+                  My Tools
+                  <i class="fa fa-edit float-right" style="color: #333;"></i>
+                </h6>
+                <div class="row">
+                  <div class="col-sm-2" *ngFor="let svg of svgs">
+                    <img src="{{svg.img}}" alt="{{svg.alt}}" class="svg">
+                    <h6 class="icon-text">{{svg.alt}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
               <div class="paragraph">
                 <h6 class="header" style="border-bottom: 2px solid #085B02;">My Reports</h6>
                 <div *ngFor="let report of reports">
@@ -126,20 +148,12 @@
               </div>
             </div>
             <div class="col-sm-3 col-xs-12">
-              <div class="paragraph" *ngFor="let team of teams">
-                <h6 class="header" style="border-bottom: 2px solid #74C447;">{{team.title}}</h6>
-                <h6 class="text" *ngFor="let text of team.texts">{{text}}</h6>
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #74C447;">My Teams</h6>
+                <h6 class="text" *ngFor="let team of teams">{{team}}</h6>
               </div>
             </div>
             <div class="col-sm-6 col-xs-12">
-              <div class="paragraph">
-                <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">
-                  My Tools
-                  <i class="fa fa-edit float-right" style="color: #333;"></i>
-                </h6>
-                <!--Add icons-->
-                <div style="height: 150px;"></div>
-              </div>
               <div class="paragraph">
                 <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">
                   My Links

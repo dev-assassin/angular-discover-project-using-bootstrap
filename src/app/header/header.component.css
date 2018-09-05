@@ -69,6 +69,7 @@ a:hover {
     position: absolute;
     padding: 10px;
     pointer-events: none;
+    cursor: pointer;
 }
 
 .right-addon .fa-search { right: 20px;}
@@ -152,9 +153,26 @@ td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    font-size: 12px;
 }
 
 .advisor {
     width: 250px;
     margin-bottom: 20px;
+}
+
+.svg {
+    width: 25px;
+    margin: 15px 15px 0 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.icon-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    vertical-align: middle;
+    align-items: center;
 }
