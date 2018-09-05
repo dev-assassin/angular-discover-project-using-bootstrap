@@ -21,6 +21,11 @@ export class HeaderComponent implements OnInit {
   channels: any;
   resources: any;
   tables: any;
+  text3: string;
+  bpersonals: any;
+  brendings: any;
+  deliveries: any;
+  rates: any;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -238,6 +243,53 @@ export class HeaderComponent implements OnInit {
         des: 'Interests Rate #6',
         per: '6.7%'
       }
+    ];
+    this.rates = [
+      {
+        des: 'Lending Rate #1',
+        per: '1.2%'
+      },
+      {
+        des: 'Lending Rate #2',
+        per: '2.3%'
+      },
+      {
+        des: 'Lending Rate #3',
+        per: '3.4%'
+      },
+      {
+        des: 'Lending Rate #4',
+        per: '4.5%'
+      },
+      {
+        des: 'Lending Rate #5',
+        per: '5.6%'
+      },
+      {
+        des: 'Lending Rate #6',
+        per: '6.7%'
+      }
+    ];
+    this.text3 = 'Whether it\'s a new home or business, we can help make out customers\' dreams a reality.';
+    this.bpersonals = [
+      'Mortgage', 'Home Equity', 'Personal Loans', 'Credit Cards'
+    ];
+    this.brendings = [
+      {
+        title: 'Business',
+        texts: [
+          'Commercial Loans', 'Small Business Loans', 'Credit Cards'
+        ]
+      },
+      {
+        title: 'Indirect Lending',
+        texts: [
+          'Indirect Lending'
+        ]
+      }
+    ];
+    this.deliveries = [
+      'Online & Mobile Banking', 'Bankline'
     ];
   }
 

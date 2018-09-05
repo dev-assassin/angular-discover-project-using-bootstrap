@@ -29,10 +29,10 @@
         <a href="#" data-toggle="modal" data-target="#bankModal">Bank</a>
       </li>
       <li class="">
-        <a href="#">Borrow</a>
+        <a href="#" data-toggle="modal" data-target="#borrowModal">Borrow</a>
       </li>
       <li class="">
-        <a href="#">Invest</a>
+        <a href="#" data-toggle="modal" data-target="#investModal">Invest</a>
       </li>
       <li class="last">
         <a href="#">Insure</a>
@@ -213,9 +213,9 @@
                   <div class="col-sm-6">
                     <table>
                       <tbody>
-                        <tr *ngFor="let table of tables">
-                          <td>{{table.des}}</td>
-                          <td>{{table.per}}</td>
+                        <tr *ngFor="let rate of rates">
+                          <td>{{rate.des}}</td>
+                          <td>{{rate.per}}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -224,10 +224,101 @@
               </div>
             </div>
           </div>
+          <h6 class="read">View All</h6>
           <div class="float-right">
             <i class="fa fa-lightbulb-o icons"></i>
             <h6 class="bottom">PRO TIP: <small>Add your favorites to&nbsp;<a href="#" class="tools">My Tools</a></small></h6>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Borrow Modal-->
+<div class="modal fade" id="borrowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog bank" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">About Northwest credit options</h6>
+                <h6 class="text">{{text3}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">Personal</h6>
+                <h6 class="text" *ngFor="let bpersonal of bpersonals">{{bpersonal}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <div class="paragraph" *ngFor="let brending of brendings">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">{{brending.title}}</h6>
+                <h6 class="text" *ngFor="let text of brending.texts">{{text}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #74C447;">Delivery Channels</h6>
+                <h6 class="text" *ngFor="let delivery of deliveries">{{delivery}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">Tools & Resources</h6>
+                <h6 class="text" *ngFor="let resource of resources">{{resource}}</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">Current Loan Rates</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <table>
+                      <tbody>
+                        <tr *ngFor="let table of tables">
+                          <td>{{table.des}}</td>
+                          <td>{{table.per}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-sm-6">
+                    <table>
+                      <tbody>
+                        <tr *ngFor="let rate of rates">
+                          <td>{{rate.des}}</td>
+                          <td>{{rate.per}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h6 class="read">View All</h6>
+          <div class="float-right">
+            <i class="fa fa-lightbulb-o icons"></i>
+            <h6 class="bottom">PRO TIP: <small>Add your favorites to&nbsp;<a href="#" class="tools">My Tools</a></small></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Invest Modal-->
+<div class="modal fade" id="investModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog bank" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
         </div>
       </div>
     </div>
