@@ -4,14 +4,14 @@
       <div class="col-7">
         <a href="#">
           <img src="assets/images/logo-Discover.png" alt="logo">
-          <i class="fa fa-angle-down arrow"></i>
+          <i class="fa fa-angle-down arrow" data-toggle="modal" data-target="#logoModal"></i>
         </a>
       </div>
       <div class="col-5">
         <div class="personal">
           <img class="avatar" src="assets/images/avatar.png" alt="avatar">
           <span style="margin-right: 20px;">Welcome, Tamra</span>
-          <i class="fa fa-angle-down arrow"></i>
+          <i class="fa fa-angle-down arrow" data-toggle="modal" data-target="#avatarModal"></i>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         <a href="#">Borrow</a>
       </li>
       <li class="">
-        <a href="#">Invset</a>
+        <a href="#">Invest</a>
       </li>
       <li class="last">
         <a href="#">Insure</a>
@@ -45,3 +45,84 @@
     </form>
   </div>
 </nav>
+
+<!--Logo Modal-->
+<div class="modal fade" id="logoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-5 col-xs-12">
+              <div class="paragraph">
+                <p class="header" style="border-bottom: 2px solid #085B02;">We are Northwest</p>
+                <p class="text">{{text1}}</p>
+                <p class="read">Learn more</p>
+                <img src="assets/images/annual.jpg" class="annual" alt="Annual">
+                <img src="assets/images/brand.jpg" class="brand" alt="Brand">
+              </div>
+              <div class="paragraph">
+                <p class="header" style="border-bottom: 2px solid #FFAD3F;">Employee Services</p>
+                <div class="row">
+                  <div class="col-6">
+                    <p class="text" *ngFor="let employee of employees">{{employee}}</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="text" *ngFor="let service of services">{{service}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="paragraph">
+                <p class="header" style="border-bottom: 2px solid #FFAD3F;">Regions</p>
+                <div class="row">
+                  <div class="col-6" *ngFor="let region of regions">
+                    <p class="text" *ngFor="let text of region.texts">{{text}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-7 col-xs-12">
+              <div class="paragraph">
+                <p class="header" style="border-bottom: 2px solid #74C447;">Corporate Departments</p>
+                <div class="row">
+                  <div class="col-3" *ngFor="let department of departments">
+                    <div *ngFor="let title of department.titles">
+                      <h4 class="read" style="font-size: 16px;">{{title.title}}</h4>
+                      <h6 class="text" *ngFor="let text of title.texts">{{text}}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="float-right">
+                <i class="fa fa-lightbulb-o icons"></i>
+                <h6 class="bottom">PRO TIP: <small>Add your favorites to&nbsp;<a href="#" class="tools">My Tools</a></small></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Avatar Modal-->
+<div class="modal fade" id="avatarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12">
+              <div class="paragraph">
+                  <p class="header" style="border-bottom: 2px solid #085B02;">Recently Visited</p>
+                  <p class="text" *ngFor="let visit of visits">{{visit}}</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12"></div>
+            <div class="col-sm-6 col-xs-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -80,3 +80,61 @@ a:hover {
     border-radius: 0% !important;
     border-bottom: 1px solid green !important;
 }
+
+.modal-dialog {
+    max-width: 1150px !important;
+    margin-top: 100px !important;
+}
+
+.header {
+    font-size: 18px;
+    color: green;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.read {
+    font-size: 14px;
+    color: green;
+}
+
+.annual {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    margin-top: 20px;
+}
+
+.paragraph {
+    margin-bottom: 15px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.icons {
+    color: green;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.bottom {
+    display: inline;
+    font-size: 14px;
+}
+
+.tools {
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
