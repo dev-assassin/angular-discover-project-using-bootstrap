@@ -81,6 +81,10 @@ a:hover {
     border-bottom: 1px solid green !important;
 }
 
+.form-control:focus, .form-control:hover {
+    border-bottom: 1px solid green;
+}
+
 .modal-dialog {
     max-width: 1150px !important;
     margin-top: 100px !important;
@@ -89,6 +93,7 @@ a:hover {
 .header {
     font-size: 18px;
     color: green;
+    padding-bottom: 5px;
 }
 
 .text {

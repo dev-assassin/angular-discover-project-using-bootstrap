@@ -12,6 +12,10 @@ export class HeaderComponent implements OnInit {
   services: any;
   regions: any;
   departments: any;
+  visits: any;
+  reports: any;
+  teams: any;
+  lists: any;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -127,6 +131,58 @@ export class HeaderComponent implements OnInit {
               'Research', 'Return Mail', 'Statement Prep', 'Production', 'Revenue Administration'
             ]
           }
+        ]
+      }
+    ];
+    this.visits = [
+      'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness', 'Human Resources',
+      'Account Processing', 'Production & Revenue'
+    ];
+    this.reports = [
+      {
+        class: 'fa fa-file-pdf-o bottom',
+        text: 'Annual Report 2018.pdf'
+      },
+      {
+        class: 'fa fa-file-pdf-o bottom',
+        text: 'Global-research-Q1-by-Gartner.pdf'
+      },
+      {
+        class: 'fa fa-file-text-o bottom',
+        text: 'Generic-rules.txt'
+      },
+      {
+        class: 'fa fa-file-word-o bottom',
+        text: 'online checking account.doc'
+      },
+      {
+        class: 'fa fa-file-excel-o bottom',
+        text: 'Student-Loadns-Q2/18.xls'
+      }
+    ];
+    this.teams = [
+      {
+        title: 'My Teams',
+        texts: [
+          'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
+        ]
+      },
+      {
+        title: 'My Projects',
+        texts: [
+          'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
+        ]
+      }
+    ];
+    this.lists = [
+      {
+        titles: [
+          'HR Web Portal', 'BVS Training', 'Northwest Online Banking', 'My Custom Link'
+        ]
+      },
+      {
+        titles: [
+          'HR Web Portal', 'BVS Training', 'Northwest Online Banking', 'My Custom Link'
         ]
       }
     ];
