@@ -16,6 +16,11 @@ export class HeaderComponent implements OnInit {
   reports: any;
   teams: any;
   lists: any;
+  text2: string;
+  personals: any;
+  channels: any;
+  resources: any;
+  tables: any;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -184,6 +189,54 @@ export class HeaderComponent implements OnInit {
         titles: [
           'HR Web Portal', 'BVS Training', 'Northwest Online Banking', 'My Custom Link'
         ]
+      }
+    ];
+    this.text2 = 'At Northwest, we offer a variety of checking and savings accounts and business cash management ' +
+      'services with easy-to-understand terms and the secure, convenient access our customers are looking for.';
+    this.personals = [
+      {
+        title: 'Personal',
+        texts: [
+          'Checking', 'Savings', 'CDs', 'IRAs and HSAs', 'Safe Deposit Boxes'
+        ]
+      },
+      {
+        title: 'Business',
+        texts: [
+          'EDI Reporting', 'Positive Pay', 'Wire Transfers', 'Lockbox Services', 'Safe Deposit Boxes'
+        ]
+      }
+    ];
+    this.channels = [
+      'Online & Mobile Banking', 'Cards & ATMs', 'Bankline', 'Checks'
+    ];
+    this.resources = [
+      'Accounts Processing Manual', 'Knowledge Bases', 'Operations Manual', 'Policies & Procedures'
+    ];
+    this.tables = [
+      {
+        des: 'Interests Rate #1',
+        per: '1.2%'
+      },
+      {
+        des: 'Interests Rate #2',
+        per: '2.3%'
+      },
+      {
+        des: 'Interests Rate #3',
+        per: '3.4%'
+      },
+      {
+        des: 'Interests Rate #4',
+        per: '4.5%'
+      },
+      {
+        des: 'Interests Rate #5',
+        per: '5.6%'
+      },
+      {
+        des: 'Interests Rate #6',
+        per: '6.7%'
       }
     ];
   }

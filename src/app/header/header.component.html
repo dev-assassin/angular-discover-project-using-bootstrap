@@ -26,7 +26,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="">
-        <a href="#">Bank</a>
+        <a href="#" data-toggle="modal" data-target="#bankModal">Bank</a>
       </li>
       <li class="">
         <a href="#">Borrow</a>
@@ -40,7 +40,7 @@
     </ul>
     <form class="form-inline inner-addon right-addon">
       <i class="fa fa-search"></i>
-      <input class="form-control mr-sm-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+      <input type="search" class="form-control" placeholder="What are you looking for?">
       <i class="fa fa-angle-down arrow"></i>
     </form>
   </div>
@@ -148,6 +148,77 @@
                 <div class="row">
                   <div class="col-sm-6" *ngFor="let list of lists">
                     <h6 class="text" *ngFor="let title of list.titles">{{title}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-right">
+            <i class="fa fa-lightbulb-o icons"></i>
+            <h6 class="bottom">PRO TIP: <small>Add your favorites to&nbsp;<a href="#" class="tools">My Tools</a></small></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Bank Modal-->
+<div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog bank" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">Banking at Northwest</h6>
+                <h6 class="text">{{text2}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12" *ngFor="let personal of personals">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">{{personal.title}}</h6>
+                <h6 class="text" *ngFor="let text of personal.texts">{{text}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #74C447;">Delivery Channels</h6>
+                <h6 class="text" *ngFor="let channel of channels">{{channel}}</h6>
+              </div>
+            </div>
+            <div class="col-sm-2 col-xs-12">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">Tools & Resources</h6>
+                <h6 class="text" *ngFor="let resource of resources">{{resource}}</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="paragraph">
+                <h6 class="header" style="border-bottom: 2px solid #085B02;">Current Deposit Rates</h6>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <table>
+                      <tbody>
+                        <tr *ngFor="let table of tables">
+                          <td>{{table.des}}</td>
+                          <td>{{table.per}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-sm-6">
+                    <table>
+                      <tbody>
+                        <tr *ngFor="let table of tables">
+                          <td>{{table.des}}</td>
+                          <td>{{table.per}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>

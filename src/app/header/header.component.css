@@ -90,6 +90,10 @@ a:hover {
     margin-top: 100px !important;
 }
 
+.bank {
+    margin-top: 210px !important;
+}
+
 .header {
     font-size: 18px;
     color: green;
@@ -142,4 +146,10 @@ a:hover {
     font-weight: 400;
     border-bottom: 1px solid;
     cursor: pointer;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
