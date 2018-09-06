@@ -54,11 +54,11 @@ a:hover {
 }
 
 .last {
-    margin-right: 250px !important;
+    margin-right: 200px !important;
 }
 
 .form-inline .form-control {
-    width: 420px !important;
+    width: 300px !important;
 }
 
 .inner-addon { 
@@ -162,7 +162,7 @@ td {
 }
 
 .svg {
-    width: 25px;
+    width: 30px;
     margin: 15px 15px 0 15px;
     text-align: center;
     vertical-align: middle;
@@ -175,4 +175,10 @@ td {
     margin-top: 5px;
     vertical-align: middle;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .tables {
+        display: none;
+    }
 }
