@@ -1,7 +1,42 @@
 <app-header></app-header>
 <div class="container">
-  <p>
-    summer-associate works!
-  </p>      
+  <h6 class="text">
+    Home&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    <span class="green">Bank On</span>
+  </h6>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-7 col-xs-12">
+      <h2 class="green">Summer Associate</h2>
+      <h2 class="green">Spotight: Brooke Buzynski</h2>
+      <h6>Tuesday, August 09, 2018</h6>
+      <h6 style="margin-top: 50px;">{{text4}}</h6>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="assets/images/articles/dog-girl.jpg" alt="dog-girl" class="img-thumbnail">
+        </div>
+        <div class="col-md-7">
+          <h6 *ngFor="let text of texts">{{text}}</h6>
+        </div>
+      </div>
+      <h6>How do you spend your free time?</h6>
+      <h6>{{text5}}</h6>
+    </div>
+    <div class="col-md-4 offset-md-1 col-xs-12 left-column">
+      <h5 class="articles">Recommended articles</h5>
+      <h5 class="green">Summer Asoociate</h5>
+      <h5 class="green">Spotlight: Brooke Buzynski</h5>
+      <h6>{{text1}}</h6>
+      <hr />
+      <h5 class="green">7 Reasons to Consider Student Loan Consolidation</h5>
+      <h6>{{text2}}</h6>
+      <hr />
+      <h5 class="green">How Home Equity Can Help Pay Off Debt</h5>
+      <h6>{{text3}}</h6>
+      <hr />
+      <h5 class="green"><b>Read More Related Articles</b></h5>
+    </div>
+  </div>
+  <hr />
 </div>
 <app-footer></app-footer>
