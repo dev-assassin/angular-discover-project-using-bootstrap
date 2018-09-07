@@ -50,15 +50,15 @@ a:hover {
 }
 
 .navbar-nav li {
-    margin-right: 40px;
+    margin-right: 80px;
 }
 
-.last {
-    margin-right: 250px !important;
+.navbar-nav {
+    margin-right: 200px;
 }
 
 .form-inline .form-control {
-    width: 420px !important;
+    width: 300px !important;
 }
 
 .inner-addon { 
@@ -162,7 +162,7 @@ td {
 }
 
 .svg {
-    width: 25px;
+    width: 30px;
     margin: 15px 15px 0 15px;
     text-align: center;
     vertical-align: middle;
@@ -175,4 +175,35 @@ td {
     margin-top: 5px;
     vertical-align: middle;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .tables {
+        display: none;
+    }
+    .top-header {
+        margin: 20px 0 20px 0;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+} */
+
+@media (min-width: 576px) {
+    .form-inline .form-control {
+        display: inline !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar-nav li {
+        margin-right: 40px;
+        text-align: center;
+    }
+    .navbar-nav {
+        margin-right: 150px;
+    }
 }

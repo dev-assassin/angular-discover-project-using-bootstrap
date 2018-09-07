@@ -56,3 +56,18 @@
     align-items: center;
     text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+    .brand img, .links {
+        display: none;
+    }
+    .brand {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .questions {
+        display: none;
+    }
+}

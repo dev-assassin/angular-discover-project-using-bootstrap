@@ -1,0 +1,17 @@
+.green {
+    color: green;
+}
+
+.articles {
+    color: green;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .left-column {
+        display: none;
+    }
+}
