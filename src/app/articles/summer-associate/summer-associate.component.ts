@@ -13,6 +13,7 @@ export class SummerAssociateComponent implements OnInit {
   text4: string;
   text5: string;
   texts: any;
+  chats: any;
 
   constructor() {
     this.text1 = 'John Brittner is a summer associate at our Zelienople office. He\'s an upcoming senior at ' +
@@ -43,9 +44,32 @@ export class SummerAssociateComponent implements OnInit {
     this.text5 = 'I spend my free time going to the gym, hanging out with friends, or reading. My ' +
       'favorite book is Dracula, but I really love Stephen King and Herman Melville as well. I also like ' +
       'walking my neighbor\'s three dogs (I really love dogs).';
+    this.chats = [
+      {
+        img: 'assets/images/profiles/Anne.png',
+        name: 'Anne Perkins',
+        des: 'So happy @Brooke is enjoying her time at Northwest! I used to be a summer associate when ' +
+          'I was in college and I loved it!'
+      },
+      {
+        img: 'assets/images/profiles/Chris.png',
+        name: 'Chris Traeger',
+        des: 'I literally could not be happier to have @Brooke on our team!'
+      },
+      {
+        img: 'assets/images/profiles/Leslie-.png',
+        name: 'Leslie Knope',
+        des: 'Brooke you’re amazing and wonderful and we are so happy you’re here.' +
+          'I’d be happy to talk with you about your future and help you create a five-year plan.'
+      }
+    ];
   }
 
   ngOnInit() {
+  }
+
+  add_comment() {
+    console.log('add comments');
   }
 
 }
