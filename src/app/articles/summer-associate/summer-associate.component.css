@@ -25,6 +25,11 @@
     margin-left: 20px;
 }
 
+hr {
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+}
+
 @media screen and (max-width: 768px) {
     .left-column {
         display: none;
