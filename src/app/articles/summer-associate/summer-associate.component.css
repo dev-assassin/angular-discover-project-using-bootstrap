@@ -2,6 +2,10 @@
     color: green;
 }
 
+.text {
+    font-size: 14px;
+}
+
 .articles {
     color: green;
     border-bottom: 2px solid green;

@@ -87,7 +87,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-6" *ngFor="let department of departments">
                     <div *ngFor="let title of department.titles">
-                      <h4 class="read" style="font-size: 16px;">{{title.title}}</h4>
+                      <a routerLink="/home/marketing/communications" class="read" style="font-size: 16px;">{{title.title}}</a>
                       <h6 class="text" *ngFor="let text of title.texts">{{text}}</h6>
                     </div>
                   </div>

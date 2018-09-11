@@ -107,7 +107,7 @@ a:hover {
 
 .read {
     font-size: 14px;
-    color: green;
+    color: green !important;
 }
 
 .annual {
