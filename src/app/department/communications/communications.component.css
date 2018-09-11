@@ -1,0 +1,113 @@
+.modal-backdrop.fade {
+    opacity: 0 !important;
+}
+
+.green {
+    color: green;
+}
+
+.communication {
+    color: green;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.launching {
+    /* opacity: .6; */
+    transition: background-color .25s, border-color .25s !important;
+    height: min-content;
+    padding-bottom: 80px;
+}
+
+.paragraph {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 200px;
+    left: 60px;
+    background-color: transparent;
+}
+
+.text-put {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #eee;
+    opacity: .7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.read {
+    color: green;
+    margin-top: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+hr {
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400 !important;
+}
+
+.icons {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.pencil {
+    font-size: 14px;
+    color: #333;
+    padding-top: 10px;
+}
+
+.article {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bottom {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.page-link {
+    border: none !important;
+}
+
+.svg {
+    width: 20px;
+    margin: 15px 15px 0 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.icon-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    vertical-align: middle;
+    align-items: center;
+    font-weight: 400 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .left-column {
+        display: none;
+    }
+}

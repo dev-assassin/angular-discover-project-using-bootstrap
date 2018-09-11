@@ -1,0 +1,118 @@
+<app-header></app-header>
+
+<div class="container">
+  <h6 class="text">
+    Home&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    Marketing&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    <span class="green">Communications</span>
+  </h6>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-8 col-xs-12">
+      <div class="paragraph">
+        <img src="assets/images/communications/launching.jpg" class="img-fluid launching">
+        <div class="text-block">
+          <p class="green title h3">We're launching</p>
+          <p class="text h6">Get to know our new ad campaign.</p>
+          <h6 class="text">Because soon, you’ll be seeing it everywhere.</h6>
+          <h6 class="read">Read more</h6>
+        </div>
+      </div>
+      <div class="title" style="margin-top: -30px;">
+        <p class="h5 green">Articles</p>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 article" *ngFor="let article of articles">
+            <div class="paragraph">
+              <img src="{{article.img}}" class="img-fluid" alt="Responsive image">
+              <div class="text-put">
+                <h6 class="text green">{{article.title}}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <p class="h5 green">Customer Communications</p>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 article" *ngFor="let customer of customers">
+            <div class="paragraph">
+              <img src="{{customer.img}}" class="img-fluid" alt="Responsive image">
+              <div class="text-put">
+                <h6 class="text green">{{customer.title}}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <p class="h5 green">Memos</p>
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 article" *ngFor="let memo of memos">
+            <div class="paragraph">
+              <img src="{{memo.img}}" class="img-fluid" alt="Responsive image">
+              <div class="text-put">
+                <h6 class="text green">{{memo.title}}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <div class="title">
+        <h5 class="communication">About Communications</h5>
+        <h6>{{text1}}</h6>
+      </div>
+      <div class="title">
+        <h5 class="communication">Contacts</h5>
+        <div class="row" *ngFor="let profile of profiles" style="margin-bottom: 20px;">
+          <div class="col-4">
+            <img src="{{profile.img}}" class="img-fluid avatar">
+          </div>
+          <div class="col-8">
+            <h6>{{profile.name}}</h6>
+            <h6 class="text">{{profile.role}}</h6>
+            <img src="{{img}}" class="img-fluid icons" *ngFor="let img of profile.imgs">
+          </div>
+        </div>
+      </div>
+      <div class="title left-column">
+        <h5 class="communication">Documents</h5>
+        <div *ngFor="let doc of docs" style="margin-bottom: 10px;">
+          <img src="assets/images/icon-docs.svg" class="img-fluid bottom">
+          <span class="text">{{doc}}</span>
+        </div>
+        <nav aria-label="pagination">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left green"></i></a></li>
+            <li class="page-item"><a class="page-link"><span class="green text">1 - 5 of 13</span></a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title left-column">
+        <h5 class="communication">Tools<i class="fa fa-pencil float-right pencil"></i></h5>
+        <div class="row">
+          <div class="col-sm-4" style="text-align: center;" *ngFor="let tool of tools">
+            <img src="{{tool.img}}" class="img-fluid svg">
+            <h6 class="icon-text">{{tool.text}}</h6>
+          </div>
+        </div>
+        <nav aria-label="pagination">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left green"></i></a></li>
+            <li class="page-item"><a class="page-link"><span class="green text">1 - 6 of 11</span></a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title left-column">
+        <h5 class="communication">Events</h5>
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>
+
+<app-footer></app-footer>

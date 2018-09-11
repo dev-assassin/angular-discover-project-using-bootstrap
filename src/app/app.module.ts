@@ -9,6 +9,7 @@ import { SwiperModule } from 'angular2-useful-swiper';
 import { UiSwitchModule } from 'ngx-toggle-switch';
 import { FooterComponent } from './footer/footer.component';
 import { SummerAssociateComponent } from './articles/summer-associate/summer-associate.component';
+import { CommunicationsComponent } from './department/communications/communications.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SummerAssociateComponent } from './articles/summer-associate/summer-ass
     HeaderComponent,
     HomepageComponent,
     FooterComponent,
-    SummerAssociateComponent
+    SummerAssociateComponent,
+    CommunicationsComponent
   ],
   imports: [
     BrowserModule,
