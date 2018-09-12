@@ -177,6 +177,10 @@ td {
     align-items: center;
 }
 
+.modal-backdrop {
+    background-color: red;
+}
+
 @media screen and (max-width: 768px) {
     .tables {
         display: none;
