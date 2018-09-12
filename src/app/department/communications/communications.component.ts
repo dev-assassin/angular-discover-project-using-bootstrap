@@ -14,6 +14,7 @@ export class CommunicationsComponent implements OnInit {
   memos: any;
   docs: any;
   tools: any;
+  events: any;
 
   constructor() {
     this.text1 = 'We manage the internal and external messaging for the bank. Anything from copywriting, Bank...';
@@ -107,6 +108,20 @@ export class CommunicationsComponent implements OnInit {
       {
         img: 'assets/images/icons/icon-tools-custom.svg',
         text: 'Custom Tool'
+      }
+    ];
+    this.events = [
+      {
+        date: 'Wednesday',
+        day: '19',
+        month: 'October',
+        text: 'Voice of the Customer Quarter 3 Webinar'
+      },
+      {
+        date: 'Thursday',
+        day: '22',
+        month: 'November',
+        text: 'Voice of the Customer Quarter 4 Webinar'
       }
     ];
   }

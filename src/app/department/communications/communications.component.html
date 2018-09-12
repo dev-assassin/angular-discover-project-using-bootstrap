@@ -9,7 +9,7 @@
     <span class="green">Communications</span>
   </h6>
   <div class="row" style="margin-top: 30px;">
-    <div class="col-md-8 col-xs-12">
+    <div class="col-lg-8 col-xs-12">
       <div class="paragraph">
         <img src="assets/images/communications/launching.jpg" class="img-fluid launching">
         <div class="text-block">
@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 col-xs-12">
+    <div class="col-lg-4 col-xs-12">
       <div class="title">
         <h5 class="communication">About Communications</h5>
         <h6>{{text1}}</h6>
@@ -109,6 +109,18 @@
       </div>
       <div class="title left-column">
         <h5 class="communication">Events</h5>
+        <div class="row event" *ngFor="let event of events">
+          <div class="col-sm-4">
+            <div class="date">
+              <h6 class="text">{{event.date}}</h6>
+              <h4 class="green">{{event.day}}</h4>
+              <h5 class="green">{{event.month}}</h5>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <p class="h6">{{event.text}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
