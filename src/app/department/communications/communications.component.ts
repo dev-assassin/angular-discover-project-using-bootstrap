@@ -15,6 +15,20 @@ export class CommunicationsComponent implements OnInit {
   docs: any;
   tools: any;
   events: any;
+  config: SwiperOptions = {
+    pagination: '.swiper-pagination',
+    paginationClickable: false,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    slidesPerView: 3,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      }
+    }
+  };
 
   constructor() {
     this.text1 = 'We manage the internal and external messaging for the bank. Anything from copywriting, Bank...';
