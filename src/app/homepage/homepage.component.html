@@ -1,34 +1,30 @@
 <app-header></app-header>
 <div class="homepage">
   <div class="container">
-    <swiper [config]="config">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="row">
-            <div class="col-md-5 col-xs-12">
-              <div *ngFor="let text of texts">
-                <p class="{{text.class}}">{{text.data}}</p>
-              </div>
-            </div>
-          </div>
+    <div class="row">
+      <div class="col-md-5 col-xs-12">
+        <div *ngFor="let text of texts">
+          <p class="{{text.class}}">{{text.data}}</p>
         </div>
       </div>
-      <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
-    </swiper>
+    </div>
   </div>
 </div>
 
 <div class="container">
   <div class="second-section">
-    <div class="row">
-      <div class="col-md-4 col-xs-12" *ngFor="let list of lists">
-        <p class="header">{{list.title}}</p>
-        <p class="text">{{list.text}}</p>
-        <!-- <p class="additional">Read more</p> -->
-        <a routerLink="/home/bank-on/summer-associate" class="additional">Read more</a>
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let list of lists">
+          <p class="header">{{list.title}}</p>
+          <p class="text">{{list.text}}</p>
+          <!-- <p class="additional">Read more</p> -->
+          <a routerLink="/home/bank-on/summer-associate" class="additional">Read more</a>
+        </div>
       </div>
-    </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+    </swiper>
     <hr />
   </div>
 </div>

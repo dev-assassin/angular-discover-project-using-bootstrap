@@ -9,10 +9,17 @@ export class HomepageComponent implements OnInit {
 
   config: SwiperOptions = {
     pagination: '.swiper-pagination',
-    paginationClickable: true,
+    paginationClickable: false,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    spaceBetween: 30
+    spaceBetween: 30,
+    slidesPerView: 3,
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
   };
   lists: any;
   texts: any;
