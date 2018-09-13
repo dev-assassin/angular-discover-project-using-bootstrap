@@ -30,16 +30,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="">
-        <a href="#" (mouseover)="activetoggle3($event)">Bank</a>
+        <a (mouseover)="activetoggle3($event)">Bank</a>
       </li>
       <li class="">
-        <a href="#" (mouseover)="activetoggle4($event)">Borrow</a>
+        <a (mouseover)="activetoggle4($event)">Borrow</a>
       </li>
       <li class="">
-        <a href="#" (mouseover)="activetoggle5($event)">Invest</a>
+        <a (mouseover)="activetoggle5($event)">Invest</a>
       </li>
       <li class="last">
-        <a href="#" (mouseover)="activetoggle6($event)">Insure</a>
+        <a (mouseover)="activetoggle6($event)">Insure</a>
       </li>
       <!-- <li class="" (mouseover)="mouseHovering3()" (mouseout)="mouseLeft3()">
           <a>Bank</a>
@@ -57,7 +57,7 @@
     <form class="form-inline inner-addon right-addon">
       <i class="fa fa-search" (click)="search()"></i>
       <input type="search" class="form-control" placeholder="What are you looking for?">
-      <i class="fa fa-angle-down arrow"></i>
+      <i class="fa fa-angle-down arrow" style="margin-top: -15px;"></i>
     </form>
   </div>
 </nav>
@@ -65,16 +65,32 @@
 <!--Logo Hover-->
 <div class="container logoModal" [ngStyle]="{'display': showHidden1 ? 'block' : 'none'}">
   <div class="row">
-    <div class="col-md-5 col-xs-12">
+    <div class="col-md-4 col-xs-12">
       <div class="paragraph">
-        <p class="header" style="border-bottom: 2px solid #085B02;">We are Northwest</p>
+        <p class="header under_color" style="color: #085B02;">We are Northwest</p>
         <p class="text">{{text1}}</p>
         <p class="read">Learn more</p>
-        <img src="assets/images/annual.jpg" class="annual" alt="Annual">
-        <img src="assets/images/brand.jpg" class="brand" alt="Brand">
+        <div class="row">
+          <div class="col-5">
+            <div class="brand">
+              <img src="assets/images/annual.png" class="img-fluid annual" alt="Annual">
+              <div class="text-put">
+                <h6 class="text green">Annual Report</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="brand">
+              <img src="assets/images/brand.png" class="img-fluid annual" alt="Brand">
+              <div class="text-put">
+                <h6 class="text green">Brand Center</h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="paragraph">
-        <p class="header" style="border-bottom: 2px solid #FFAD3F;">Employee Services</p>
+        <p class="header under_color" style="color: #085B02;">Employee Services</p>
         <div class="row">
           <div class="col-6">
             <p class="text" *ngFor="let employee of employees">{{employee}}</p>
@@ -85,7 +101,7 @@
         </div>
       </div>
       <div class="paragraph">
-        <p class="header" style="border-bottom: 2px solid #FFAD3F;">Regions</p>
+        <p class="header under_color" style="color: #085B02;">Regions</p>
         <div class="row">
           <div class="col-6" *ngFor="let region of regions">
             <p class="text" *ngFor="let text of region.texts">{{text}}</p>
@@ -93,13 +109,13 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7 col-xs-12">
+    <div class="col-md-8 col-xs-12">
       <div class="paragraph">
-        <p class="header" style="border-bottom: 2px solid #74C447;">Corporate Departments</p>
+        <p class="header under_color" style="color: #085B02;">Corporate Departments</p>
         <div class="row">
           <div class="col-md-3 col-xs-6" *ngFor="let department of departments">
             <div *ngFor="let title of department.titles">
-              <a routerLink="/home/marketing/communications" class="read" style="font-size: 16px;">{{title.title}}</a>
+              <a routerLink="/home/marketing/communications" class="sub_title">{{title.title}}</a>
               <h6 class="text" *ngFor="let text of title.texts">{{text}}</h6>
             </div>
           </div>

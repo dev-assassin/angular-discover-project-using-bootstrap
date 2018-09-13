@@ -106,8 +106,26 @@ a:hover {
     padding-bottom: 5px;
 }
 
+.under_color {
+    border-bottom: 2px solid #73665F;
+}
+
+.sub_title {
+    font-size: 16px;
+    color: #74C447 !important;
+}
+
 .text {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400 !important;
+}
+
+.green {
+    color: green;
+}
+
+.brand {
+    position: relative;
 }
 
 .read {
@@ -116,8 +134,10 @@ a:hover {
 }
 
 .annual {
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 .modal-body {
@@ -208,6 +228,17 @@ td {
     margin-top: -10px;
     left: 0;
     right: 0;
+}
+
+.text-put {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100px;
+    background-color: #eee;
+    opacity: .7;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
