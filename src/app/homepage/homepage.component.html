@@ -16,6 +16,7 @@
     <swiper [config]="config">
       <div class="swiper-wrapper">
         <div class="swiper-slide" *ngFor="let list of lists">
+          <img src="{{list.img}}" class="img-fluid">
           <p class="header">{{list.title}}</p>
           <p class="text">{{list.text}}</p>
           <!-- <p class="additional">Read more</p> -->
