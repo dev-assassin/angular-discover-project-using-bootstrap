@@ -34,6 +34,12 @@ export class HeaderComponent implements OnInit {
   insures: any;
   lasts: any;
   svgs: any;
+  showHidden1: boolean;
+  showHidden2: boolean;
+  showHidden3: boolean;
+  showHidden4: boolean;
+  showHidden5: boolean;
+  showHidden6: boolean;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -404,10 +410,70 @@ export class HeaderComponent implements OnInit {
         alt: 'Custom Tool',
       }
     ];
+    this.showHidden1 = false;
+    this.showHidden2 = false;
+    this.showHidden3 = false;
+    this.showHidden4 = false;
+    this.showHidden5 = false;
+    this.showHidden6 = false;
   }
 
   ngOnInit() {
     console.log(this.departments[0].titles[0].texts, '---');
+  }
+
+  activetoggle1(event: any) {
+    this.showHidden1 = !this.showHidden1;
+    this.showHidden2 = false;
+    this.showHidden3 = false;
+    this.showHidden4 = false;
+    this.showHidden5 = false;
+    this.showHidden6 = false;
+  }
+
+  activetoggle2(event: any) {
+    this.showHidden2 = !this.showHidden2;
+    this.showHidden1 = false;
+    this.showHidden3 = false;
+    this.showHidden4 = false;
+    this.showHidden5 = false;
+    this.showHidden6 = false;
+  }
+
+  activetoggle3(event: any) {
+    this.showHidden3 = !this.showHidden3;
+    this.showHidden1 = false;
+    this.showHidden2 = false;
+    this.showHidden4 = false;
+    this.showHidden5 = false;
+    this.showHidden6 = false;
+  }
+
+  activetoggle4(event: any) {
+    this.showHidden4 = !this.showHidden4;
+    this.showHidden1 = false;
+    this.showHidden2 = false;
+    this.showHidden3 = false;
+    this.showHidden5 = false;
+    this.showHidden6 = false;
+  }
+
+  activetoggle5(event: any) {
+    this.showHidden5 = !this.showHidden5;
+    this.showHidden1 = false;
+    this.showHidden2 = false;
+    this.showHidden3 = false;
+    this.showHidden4 = false;
+    this.showHidden6 = false;
+  }
+
+  activetoggle6(event: any) {
+    this.showHidden6 = !this.showHidden6;
+    this.showHidden1 = false;
+    this.showHidden2 = false;
+    this.showHidden3 = false;
+    this.showHidden4 = false;
+    this.showHidden5 = false;
   }
 
   serach() {

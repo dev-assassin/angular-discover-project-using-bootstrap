@@ -186,6 +186,26 @@ td {
     cursor: pointer;
 }
 
+.logoModal {
+    background-color: #eee;
+    padding: 20px;
+    position: absolute;
+    z-index: 50;
+    margin-top: -90px;
+    left: 0;
+    right: 0;
+}
+
+.bankModal {
+    background-color: #eee;
+    padding: 20px;
+    position: absolute;
+    z-index: 50;
+    /* margin-top: -90px; */
+    left: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 768px) {
     .tables {
         display: none;
