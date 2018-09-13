@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
 
   constructor() {
     this.links = [
-      'About Northwest Investor Relations', 'Visual Directory Security Center '
+      'About Northwest', 'Visual Directory', 'Investor Relations', 'Security Center'
     ];
     this.imgs = [
       {
