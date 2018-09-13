@@ -10,6 +10,7 @@ import { UiSwitchModule } from 'ngx-toggle-switch';
 import { FooterComponent } from './footer/footer.component';
 import { SummerAssociateComponent } from './articles/summer-associate/summer-associate.component';
 import { CommunicationsComponent } from './department/communications/communications.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CommunicationsComponent } from './department/communications/communicati
     HomepageComponent,
     FooterComponent,
     SummerAssociateComponent,
-    CommunicationsComponent
+    CommunicationsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

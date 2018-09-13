@@ -47,6 +47,7 @@ a:hover {
     vertical-align: middle;
     align-items: center;
     cursor: pointer;
+    font-size: 22px;
 }
 
 .navbar-nav li {
@@ -58,7 +59,7 @@ a:hover {
 }
 
 .form-inline .form-control {
-    width: 300px !important;
+    width: 250px !important;
 }
 
 .inner-addon { 
@@ -179,6 +180,10 @@ td {
 
 .modal-backdrop {
     background-color: red;
+}
+
+.project_link {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
