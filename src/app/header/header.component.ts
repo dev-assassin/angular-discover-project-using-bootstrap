@@ -476,6 +476,54 @@ export class HeaderComponent implements OnInit {
     this.showHidden5 = false;
   }
 
+  // mouseHovering1() {
+  //   this.showHidden1 = true;
+  // }
+
+  // mouseLeft1() {
+  //   this.showHidden1 = false;
+  // }
+
+  // mouseHovering2() {
+  //   this.showHidden2 = true;
+  // }
+
+  // mouseLeft2() {
+  //   this.showHidden2 = false;
+  // }
+
+  // mouseHovering3() {
+  //   this.showHidden3 = true;
+  // }
+
+  // mouseLeft3() {
+  //   this.showHidden3 = false;
+  // }
+
+  // mouseHovering4() {
+  //   this.showHidden4 = true;
+  // }
+
+  // mouseLeft4() {
+  //   this.showHidden4 = false;
+  // }
+
+  // mouseHovering5() {
+  //   this.showHidden5 = true;
+  // }
+
+  // mouseLeft5() {
+  //   this.showHidden5 = false;
+  // }
+
+  // mouseHovering6() {
+  //   this.showHidden6 = true;
+  // }
+
+  // mouseLeft6() {
+  //   this.showHidden6 = false;
+  // }
+
   serach() {
     console.log('search');
   }

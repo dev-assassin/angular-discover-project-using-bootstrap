@@ -9,8 +9,8 @@ a img {
 }
 
 .avatar {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 20px;
 }
 
@@ -60,6 +60,7 @@ a:hover {
 
 .form-inline .form-control {
     width: 250px !important;
+    margin-top: -10px;
 }
 
 .inner-addon { 
@@ -73,7 +74,10 @@ a:hover {
     cursor: pointer;
 }
 
-.right-addon .fa-search { right: 20px;}
+.right-addon .fa-search {
+    right: 20px;
+    margin-top: -10px;
+}
 
 .right-addon input { padding-right: 30px; }
 
@@ -191,7 +195,7 @@ td {
     padding: 20px;
     position: absolute;
     z-index: 50;
-    margin-top: -90px;
+    margin-top: -100px;
     left: 0;
     right: 0;
 }
@@ -201,7 +205,7 @@ td {
     padding: 20px;
     position: absolute;
     z-index: 50;
-    /* margin-top: -90px; */
+    margin-top: -10px;
     left: 0;
     right: 0;
 }

@@ -2,16 +2,20 @@
   <div class="top-header">
     <div class="row">
       <div class="col-sm-7">
-        <a href="#">
-          <img src="assets/images/logo-Discover.png" alt="logo" class="img-fluid">
-        </a>
-        <i class="fa fa-angle-down arrow" (mouseover)="activetoggle1($event)"></i>
+        <!-- <div class="logo" (mouseover)="mouseHovering1()" (mouseout)="mouseLeft1()"> -->
+          <div class="logo" (mouseover)="activetoggle1($event)">
+          <a href="#">
+            <img src="assets/images/logo-Discover.png" alt="logo" class="img-fluid">
+          </a>
+          <i class="fa fa-angle-down arrow"></i>
+        </div>
       </div>
       <div class="col-sm-5">
-        <div class="personal">
+        <!-- <div class="personal" (mouseover)="mouseHovering2()" (mouseout)="mouseLeft2()"> -->
+          <div class="personal" (mouseover)="activetoggle2($event)">
           <img class="avatar img-fluid" src="assets/images/avatar.png" alt="avatar">
           <span class="h5" style="margin-right: 20px;">Welcome, Tamra</span>
-          <i class="fa fa-angle-down arrow" (mouseover)="activetoggle2($event)"></i>
+          <i class="fa fa-angle-down arrow"></i>
         </div>
       </div>
     </div>
@@ -37,6 +41,18 @@
       <li class="last">
         <a href="#" (mouseover)="activetoggle6($event)">Insure</a>
       </li>
+      <!-- <li class="" (mouseover)="mouseHovering3()" (mouseout)="mouseLeft3()">
+          <a>Bank</a>
+        </li>
+        <li class="" (mouseover)="mouseHovering4()" (mouseout)="mouseLeft4()">
+          <a>Borrow</a>
+        </li>
+        <li class="" (mouseover)="mouseHovering5()" (mouseout)="mouseLeft5()">
+          <a>Invest</a>
+        </li>
+        <li class="last" (mouseover)="mouseHovering6()" (mouseout)="mouseLeft6()">
+          <a>Insure</a>
+        </li> -->
     </ul>
     <form class="form-inline inner-addon right-addon">
       <i class="fa fa-search" (click)="search()"></i>
