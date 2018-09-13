@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.switch-text {
+    font-size: 10px !important;
+}
+
 .submit {
     display: inline;
 }
