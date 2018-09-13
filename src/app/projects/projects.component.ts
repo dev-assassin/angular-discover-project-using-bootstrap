@@ -7,7 +7,54 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  projects: any;
+  config: SwiperOptions = {
+    pagination: '.swiper-pagination',
+    paginationClickable: false,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    slidesPerView: 3,
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
+  };
+  cards: any;
+
+  constructor() {
+    this.projects = [
+      'My assignments (61)', 'My Recent Activity', 'My Schedule'
+    ];
+    this.cards = [
+      {
+        title: '2017 Corporate ad campaign',
+        text: 'Get to know our new ad campaign. Because soon, you’ll be seeing it everywhere.',
+        images: [
+          'assets/images/projects/Jane.jpg', 'assets/images/projects/Jennifer.jpg', 'assets/images/projects/guy1.png',
+          'assets/images/projects/guy2.png'
+        ]
+      },
+      {
+        title: 'Banking For a Better World',
+        text: 'Get to know our new ad campaign. Because soon, you’ll be seeing it everywhere.',
+        images: [
+          'assets/images/projects/Jane.jpg', 'assets/images/projects/Jennifer.jpg', 'assets/images/projects/guy1.png',
+          'assets/images/projects/guy2.png'
+        ]
+      },
+      {
+        title: 'Sales and Service Culture',
+        text: 'Get to know our new ad campaign. Because soon, you’ll be seeing it everywhere.',
+        images: [
+          'assets/images/projects/Jane.jpg', 'assets/images/projects/Jennifer.jpg', 'assets/images/projects/guy1.png',
+          'assets/images/projects/guy2.png'
+        ]
+      }
+    ];
+  }
 
   ngOnInit() {
   }

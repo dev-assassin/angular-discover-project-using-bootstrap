@@ -1,3 +1,42 @@
-<p>
-  projects works!
-</p>
+<app-header></app-header>
+
+<div class="container">
+  <p class="text h6">
+    Home&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    <span class="green">Projects</span>
+  </p>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-sm-8 col-xs-12">
+      <button class="btn btn-success btn-sm float-right title">+ADD PROJECT</button>
+      <swiper [config]="config">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="paragrpah">
+              <div class="card" *ngFor="let card of cards">
+                <div class="card-body">
+                  <i class="fa fa-ellipsis-h float-right green"></i>
+                  <p class="h5 green card-title">{{card.title}}</p>
+                  <p class="text h6 card-text">{{card.text}}</p>
+                  <div class="avatars">
+                    <img src="{{image}}" class="img-fluid image" *ngFor="let image of card.images">
+                    <span class="green">+5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper>
+    </div>
+    <div class="col-sm-3 offset-sm-1 col-xs-12">
+      <div class="title">
+        <h5 class="projects">My Projects</h5>
+        <p class="h6 text" *ngFor="let project of projects">{{project}}</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>
+
+<app-footer></app-footer>
