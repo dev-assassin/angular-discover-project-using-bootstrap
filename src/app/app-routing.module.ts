@@ -5,6 +5,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SummerAssociateComponent } from './articles/summer-associate/summer-associate.component';
 import { CommunicationsComponent } from './department/communications/communications.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { DepositComponent } from './department/deposit/deposit.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'home/bank-on/summer-associate', component: SummerAssociateComponent },
   { path: 'home/marketing/communications', component: CommunicationsComponent },
-  { path: 'home/projects', component: ProjectsComponent }
+  { path: 'home/projects', component: ProjectsComponent },
+  { path: 'home/departments/deposit', component: DepositComponent }
 ];
 
 

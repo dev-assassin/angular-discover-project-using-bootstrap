@@ -71,6 +71,7 @@ export class HeaderComponent implements OnInit {
         titles: [
           {
             title: 'Compliance',
+            route: '/home/marketing/communications',
             texts: [
               'Bank Secrecy Act', 'Compliance', 'Community Reinvestment Act', 'Fair Lending', 'Resolution'
             ]
@@ -93,6 +94,7 @@ export class HeaderComponent implements OnInit {
         titles: [
           {
             title: 'Deposits',
+            route: '/home/departments/deposit',
             texts: [
               'Cash Management Support', 'Deposit Product Manangement', 'Deposit Product Support', 'Deposit Services',
               'IRA/HSA Services', 'Item Processing', 'Reporting Services'

@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SummerAssociateComponent } from './articles/summer-associate/summer-associate.component';
 import { CommunicationsComponent } from './department/communications/communications.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { DepositComponent } from './department/deposit/deposit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectsComponent } from './projects/projects.component';
     FooterComponent,
     SummerAssociateComponent,
     CommunicationsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    DepositComponent
   ],
   imports: [
     BrowserModule,
