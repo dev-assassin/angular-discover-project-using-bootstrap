@@ -25,7 +25,9 @@ export class HeaderComponent implements OnInit {
   text3: string;
   bpersonals: any;
   brendings: any;
+  indirects: any;
   deliveries: any;
+  tools: any;
   rates: any;
   advisors: any;
   invests: any;
@@ -282,21 +284,17 @@ export class HeaderComponent implements OnInit {
       'Mortgage', 'Home Equity', 'Personal Loans', 'Credit Cards'
     ];
     this.brendings = [
-      {
-        title: 'Business',
-        texts: [
-          'Commercial Loans', 'Small Business Loans', 'Credit Cards'
-        ]
-      },
-      {
-        title: 'Indirect Lending',
-        texts: [
-          'Indirect Lending'
-        ]
-      }
+      'Commercial Loans', 'Small Business Loans', 'Credit Cards'
+    ];
+    this.indirects = [
+      'Indirect Lending'
     ];
     this.deliveries = [
-      'Online & Mobile Banking', 'Bankline'
+      'Online & Mobile Banking', 'Bankline', 'BillMatrix'
+    ];
+    this.tools = [
+      'Personalized Rate Quote Calculator', 'Referring Officers Page', 'Loan Navigator Knowledge Base',
+      'Home Equity Playbook'
     ];
     this.advisors = [
       {

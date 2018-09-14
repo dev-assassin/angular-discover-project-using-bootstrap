@@ -267,41 +267,33 @@
 <!--Borrow Hover-->
 <div class="container bankModal" [ngStyle]="{'display': showHidden4 ? 'block' : 'none'}">
   <div class="row">
-    <div class="col-md-4 col-xs-12">
+    <div class="col-md-5 col-xs-12">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #085B02;">About Northwest credit options</h6>
+        <h6 class="header under_color">About Northwest credit options</h6>
         <h6 class="text">{{text3}}</h6>
       </div>
     </div>
-    <div class="col-md-2 col-xs-12">
+    <div class="col-md-2 offset-md-1 col-xs-12">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #085B02;">Personal</h6>
+        <h6 class="header under_color">Personal</h6>
         <h6 class="text" *ngFor="let bpersonal of bpersonals">{{bpersonal}}</h6>
       </div>
     </div>
     <div class="col-md-2 col-xs-12">
-      <div class="paragraph" *ngFor="let brending of brendings">
-        <h6 class="header" style="border-bottom: 2px solid #085B02;">{{brending.title}}</h6>
-        <h6 class="text" *ngFor="let text of brending.texts">{{text}}</h6>
+      <div class="paragraph">
+        <h6 class="header under_color">Business</h6>
+        <h6 class="text" *ngFor="let brending of brendings">{{brending}}</h6>
       </div>
     </div>
     <div class="col-md-2 col-xs-12">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #74C447;">Delivery Channels</h6>
-        <h6 class="text" *ngFor="let delivery of deliveries">{{delivery}}</h6>
+        <h6 class="header under_color">Indirect Lending</h6>
+        <h6 class="text" *ngFor="let indirect of indirects">{{indirect}}</h6>
       </div>
     </div>
-    <div class="col-md-2 col-xs-12">
+    <div class="col-md-5 table">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">Tools & Resources</h6>
-        <h6 class="text" *ngFor="let resource of resources">{{resource}}</h6>
-      </div>
-    </div>
-  </div>
-  <div class="row tables">
-    <div class="col-md-6">
-      <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #085B02;">Current Loan Rates</h6>
+        <h6 class="header under_color">Current Loan Rates</h6>
         <div class="row">
           <div class="col-md-6">
             <table>
@@ -325,9 +317,21 @@
           </div>
         </div>
       </div>
+      <h6 class="read float-right">View All</h6>
+    </div>
+    <div class="col-md-3 offset-md-1 col-xs-12">
+      <div class="paragraph">
+        <h6 class="header under_color">Delivery Channels</h6>
+        <h6 class="text" *ngFor="let delivery of deliveries">{{delivery}}</h6>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12">
+      <div class="paragraph">
+        <h6 class="header under_color">Tools & Resources</h6>
+        <h6 class="text" *ngFor="let tool of tools">{{tool}}</h6>
+      </div>
     </div>
   </div>
-  <h6 class="read">View All</h6>
   <div class="float-right">
     <i class="fa fa-lightbulb-o icons"></i>
     <h6 class="bottom">PRO TIP: <small>Add your favorites to&nbsp;<a href="#" class="tools">My Tools</a></small></h6>
@@ -339,20 +343,33 @@
   <div class="row">
     <div class="col-md-6 col-xs-12" *ngFor="let advisor of advisors">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #085B02;">{{advisor.title}}</h6>
+        <h6 class="header under_color">{{advisor.title}}</h6>
         <h6 class="text">{{advisor.text1}}</h6>
         <h6 class="text">{{advisor.text2}}</h6>
       </div>
     </div>
-    <div class="col-md-6 col-xs-12" *ngFor="let invest of invests">
+    <div class="col-md-6 col-xs-12">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #74C447;">{{invest.title}}</h6>
-        <h6 class="text" *ngFor="let text of invest.texts">{{text}}</h6>
+        <h6 class="header under_color">Our Services</h6>
+        <h6 class="text">Investment Management</h6>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <div class="paragrahp">
+        <h6 class="header under_color">Our Services</h6>
+        <div class="row">
+          <div class="col-6">
+            <p class="text h6">Trust Services</p>
+          </div>
+          <div class="col-6">
+            <p class="text h6">Retirement Plan Employee Benefits</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-md-6 col-xs-12" *ngFor="let third of thirds">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">{{third.title}}</h6>
+        <h6 class="header under_color">{{third.title}}</h6>
         <h6 class="text" *ngFor="let text of third.texts">{{text}}</h6>
       </div>
     </div>
