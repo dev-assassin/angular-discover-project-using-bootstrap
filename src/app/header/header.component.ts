@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
   lists: any;
   text2: string;
   personals: any;
+  businesses: any;
   channels: any;
   resources: any;
   tables: any;
@@ -205,21 +206,24 @@ export class HeaderComponent implements OnInit {
       {
         title: 'Personal',
         texts: [
-          'Checking', 'Savings', 'CDs', 'IRAs and HSAs', 'Safe Deposit Boxes'
+          'Checking', 'Savings', 'CDs', 'IRAs and HSAs'
         ]
-      },
+      }
+    ];
+    this.businesses = [
       {
         title: 'Business',
         texts: [
-          'EDI Reporting', 'Positive Pay', 'Wire Transfers', 'Lockbox Services', 'Safe Deposit Boxes'
+          'Checking', 'Savings', 'Cash Management'
         ]
       }
     ];
     this.channels = [
-      'Online & Mobile Banking', 'Cards & ATMs', 'Bankline', 'Checks'
+      'Online & Mobile Banking', 'Cards & ATMs', 'Bankline', 'Checks', 'Safe Deposit Boxes'
     ];
     this.resources = [
-      'Accounts Processing Manual', 'Knowledge Bases', 'Operations Manual', 'Policies & Procedures'
+      'Accounts Processing Manual', 'Knowledge Bases', 'Operations Manual', 'Policies & Procedures',
+      'IMF, CD, IRA-CD Playbook', 'Personal Deposit Playbook'
     ];
     this.tables = [
       {

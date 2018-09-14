@@ -38,4 +38,7 @@ hr {
     .left-column {
         display: none;
     }
+    .add-comment {
+        width: 100%;
+    }
 }
