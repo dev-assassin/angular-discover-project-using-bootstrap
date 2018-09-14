@@ -29,6 +29,7 @@ export class CommunicationsComponent implements OnInit {
       }
     }
   };
+  links: any;
 
   constructor() {
     this.text1 = 'We manage the internal and external messaging for the bank. Anything from copywriting, Bank...';
@@ -55,7 +56,7 @@ export class CommunicationsComponent implements OnInit {
     this.articles = [
       {
         img: 'assets/images/communications/article1.jpg',
-        title: 'Regulation DD Compliance Exam'
+        title: 'Home Equity Playbook'
       },
       {
         img: 'assets/images/communications/article2.jpg',
@@ -95,8 +96,7 @@ export class CommunicationsComponent implements OnInit {
       }
     ];
     this.docs = [
-      'Annual Report 2018.pdf', 'Global-research-Q1-by-Gartner.pdf', 'Generic-rules.txt',
-      'online checking account.doc', 'Student-Loadns-Q2/18.xls'
+      'Retail Deposits Playbook', 'Basic Checking Playbook', 'FDIC Guide to Deposit Insurance Rules'
     ];
     this.tools = [
       {
@@ -137,6 +137,11 @@ export class CommunicationsComponent implements OnInit {
         month: 'November',
         text: 'Voice of the Customer Quarter 4 Webinar'
       }
+    ];
+    this.links = [
+      'Branch Capture Support/LockBox Services', 'Branch Operations', 'Centralized Imaging', 'Customer Service',
+      'Deposit Operations', 'Deposit Services', 'EFT', 'Marketing', 'Office Services', 'Online & Mobile Banking',
+      'Research', 'Return Mail', 'Statement Prep', 'Transactional Services'
     ];
   }
 

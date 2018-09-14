@@ -13,21 +13,22 @@
       <div class="paragraph">
         <img src="assets/images/communications/launching.jpg" class="img-fluid launching">
         <div class="text-block">
-          <p class="green title h3">We're launching</p>
+          <p class="green h3">Memo: We're launching</p>
+          <p class="green title h3">a new ad campaign</p>
           <p class="text h6">Get to know our new ad campaign.</p>
           <h6 class="text">Because soon, you’ll be seeing it everywhere.</h6>
           <h6 class="read">Read more</h6>
         </div>
       </div>
       <div class="title" style="margin-top: -30px;">
-        <p class="h5 green">Articles</p>
+        <p class="h5 green">Memos</p>
         <swiper [config]="config">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let article of articles">
+            <div class="swiper-slide" *ngFor="let memo of memos">
               <div class="paragraph">
-                <img src="{{article.img}}" class="img-fluid" alt="Responsive image">
+                <img src="{{memo.img}}" class="img-fluid" alt="Responsive image">
                 <div class="text-put">
-                  <h6 class="text green">{{article.title}}</h6>
+                  <h6 class="text green">{{memo.title}}</h6>
                 </div>
               </div>
             </div>
@@ -50,14 +51,14 @@
         </swiper>
       </div>
       <div class="title">
-        <p class="h5 green">Memos</p>
+        <p class="h5 green">Playbooks</p>
         <swiper [config]="config">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let memo of memos">
+            <div class="swiper-slide" *ngFor="let article of articles">
               <div class="paragraph">
-                <img src="{{memo.img}}" class="img-fluid" alt="Responsive image">
+                <img src="{{article.img}}" class="img-fluid" alt="Responsive image">
                 <div class="text-put">
-                  <h6 class="text green">{{memo.title}}</h6>
+                  <h6 class="text green">{{article.title}}</h6>
                 </div>
               </div>
             </div>
@@ -89,15 +90,15 @@
           <img src="assets/images/icon-docs.svg" class="img-fluid bottom">
           <span class="text">{{doc}}</span>
         </div>
-        <nav aria-label="pagination">
+        <!-- <nav aria-label="pagination">
           <ul class="pagination">
             <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left green"></i></a></li>
             <li class="page-item"><a class="page-link"><span class="green text">1 - 5 of 13</span></a></li>
             <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
-      <div class="title left-column">
+      <!-- <div class="title left-column">
         <h5 class="communication">Tools<i class="fa fa-pencil float-right pencil"></i></h5>
         <div class="row">
           <div class="col-sm-4" style="text-align: center;" *ngFor="let tool of tools">
@@ -127,6 +128,10 @@
             <p class="h6">{{event.text}}</p>
           </div>
         </div>
+      </div> -->
+      <div class="title left-column">
+        <h5 class="communication">Related Links</h5>
+        <p class="text h6" *ngFor="let link of links">{{link}}</p>
       </div>
     </div>
   </div>
