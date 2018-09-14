@@ -241,6 +241,11 @@ td {
     padding-bottom: 10px;
 }
 
+.bottom {
+    width: 15px;
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .tables {
         display: none;

@@ -34,6 +34,7 @@ export class HeaderComponent implements OnInit {
   insures: any;
   lasts: any;
   svgs: any;
+  projects: any;
   showHidden1: boolean;
   showHidden2: boolean;
   showHidden3: boolean;
@@ -165,27 +166,26 @@ export class HeaderComponent implements OnInit {
     this.reports = [
       {
         class: 'fa fa-file-pdf-o bottom',
-        text: 'Annual Report 2018.pdf'
+        text: 'Scorecard'
       },
       {
         class: 'fa fa-file-pdf-o bottom',
-        text: 'Global-research-Q1-by-Gartner.pdf'
+        text: 'Monthly expense report'
       },
       {
         class: 'fa fa-file-text-o bottom',
-        text: 'Generic-rules.txt'
+        text: 'Services per Household'
       },
       {
         class: 'fa fa-file-word-o bottom',
-        text: 'online checking account.doc'
-      },
-      {
-        class: 'fa fa-file-excel-o bottom',
-        text: 'Student-Loadns-Q2/18.xls'
+        text: 'Loan Origination'
       }
     ];
     this.teams = [
-      'Human Resources', 'Account Processing', 'Production & Revenue', 'Health and Wellness'
+      'Senior Loan Committee', 'Credit Committee', 'BCP', 'Compliance Management Committees'
+    ];
+    this.projects = [
+      'Union Community Bank Acquisition', 'Beneficial Ownership', 'Discover Refresh', 'Branch Consolidations'
     ];
     this.lists = [
       {
@@ -195,7 +195,7 @@ export class HeaderComponent implements OnInit {
       },
       {
         titles: [
-          'HR Web Portal', 'BVS Training', 'Northwest Online Banking', 'My Custom Link'
+          'My Custom Link'
         ]
       }
     ];
