@@ -353,12 +353,12 @@ export class HeaderComponent implements OnInit {
     this.lasts = [
       {
         texts: [
-          'Northwest Insurance Services', 'Recognizing Insurance Opportunities', 'Property Casualty Presentation'
+          'Recognizing Insurance Opportunities', 'Property Casualty Presentation'
         ]
       },
       {
         texts: [
-          'Employee Benefits Presentation', 'Northwest 360', 'Online Insurance quote center'
+          'Employee Benefits Presentation', 'Online Insurance quote center'
         ]
       }
     ];

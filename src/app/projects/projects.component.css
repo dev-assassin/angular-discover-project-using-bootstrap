@@ -39,3 +39,9 @@ hr {
 .card {
     margin: 0 10px 15px 0 !important;
 }
+
+@media screen and (max-width: 768px) {
+    .button {
+        display: none;
+    }
+}

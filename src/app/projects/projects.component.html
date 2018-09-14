@@ -8,7 +8,7 @@
   </p>
   <div class="row" style="margin-top: 30px;">
     <div class="col-sm-8 col-xs-12">
-      <button class="btn btn-success btn-sm float-right title">+ADD PROJECT</button>
+      <button class="btn btn-success btn-sm float-right title button">+ADD PROJECT</button>
        <div *ngFor="let card of cards">
         <swiper [config]="config">
           <div class="swiper-wrapper">
@@ -17,7 +17,7 @@
                 <div class="card-body">
                   <i class="fa fa-ellipsis-h float-right green"></i>
                   <p class="h5 green card-title">{{project.title}}</p>
-                  <p class="text h6 card-text">{{project.text}}</p>
+                  <p class="text h6 card-text">{{project.text}}</p> 
                   <div class="avatars">
                     <img src="{{image}}" class="img-fluid image" *ngFor="let image of project.images">
                     <span class="green">+5</span>

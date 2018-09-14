@@ -384,18 +384,14 @@
 <!--Insure Hover-->
 <div class="container bankModal" [ngStyle]="{'display': showHidden6 ? 'block' : 'none'}">
   <div class="row">
-    <div class="col-md-6 col-xs-12">
+    <div class="col-md-5 col-xs-12">
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #085B02;">Northwest Insurance Services</h6>
+        <h6 class="header under_color">Northwest Insurance Services</h6>
         <h6 class="text">{{text4}}</h6>
         <h6 class="text">{{text5}}</h6>
       </div>
       <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #74C447;">Our Services</h6>
-        <h6 class="text" *ngFor="let insure of insures">{{insure}}</h6>
-      </div>
-      <div class="paragraph">
-        <h6 class="header" style="border-bottom: 2px solid #FFAD3F;">Resources</h6>
+        <h6 class="header under_color">Resources</h6>
         <div class="row">
           <div class="col-md-6 col-xs-12" *ngFor="let last of lasts">
             <h6 class="text" *ngFor="let text of last.texts">{{text}}</h6>
@@ -403,8 +399,23 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-xs-12">
-      <img src="assets/images/insure.jpg" alt="insure" class="img-fluid">
+    <div class="col-md-3 offset-md-1 col-xs-12">
+      <div class="paragraph">
+        <p class="header h6 under_color">Personal</p>
+        <p class="text h6">Property & Casualty</p>
+        <p class="text h6">Life, Disability and Long-Term Care</p>
+      </div>
     </div>
+    <div class="col-md-3 col-xs-12">
+      <div class="paragraph">
+        <p class="header h6 under_color">Business</p>
+        <p class="text h6">Property & Casualty</p>
+        <p class="text h6">Health, Life and Disability Employee Benefits</p>
+      </div>
+    </div>
+  </div>
+  <div class="float-right">
+    <i class="fa fa-lightbulb-o icons"></i>
+    <h6 class="bottom">PRO TIP: <small>Add your favorites to&nbsp;<a href="#" class="tools">My Tools</a></small></h6>
   </div>
 </div>
