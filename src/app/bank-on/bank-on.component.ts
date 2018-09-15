@@ -8,7 +8,20 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class BankOnComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  text1: string;
+  text2: string;
+  imgs: any;
+
+  constructor(private router: Router) {
+    this.text1 = 'On Friday, our Oil City office received candy from a customer.';
+    this.text2 = 'Manager Kim Reddinger said she was shocked when a longtime customer showed up at ' +
+      'the branch bearing gifts in the form of candies for everyone. "John was sure to cover everyone\'s ' +
+      'sweet tooth with this assortment!" she said as she smiled and held up the sacks of candy.';
+    this.imgs = [
+      'assets/images/icon-contact-message.svg', 'assets/images/icon-contact-phone.svg',
+      'assets/images/icon-contact-email.svg', 'assets/images/icon-contact-video.svg'
+    ];
+  }
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {

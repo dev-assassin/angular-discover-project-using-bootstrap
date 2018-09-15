@@ -1,0 +1,92 @@
+.green {
+    color: green;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400 !important;
+}
+
+hr {
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+}
+
+.image {
+    background-image: url("/assets/images/homepage.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+}
+
+.image::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#fff,#eee);
+	opacity: .4; 
+}
+
+.title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: green;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.additional {
+    color: green;
+    font-size: 16px;
+}
+
+.left-title {
+    font-size: 16px;
+}
+
+.icon {
+    width: 10px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    position: relative;
+}
+
+.text-put {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #eee;
+    opacity: .7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icons {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.page-link {
+    border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .left-column {
+        display: none;
+    }
+}

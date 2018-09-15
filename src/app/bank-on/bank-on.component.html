@@ -1,9 +1,60 @@
 <app-header></app-header>
 
 <div class="container">
-  <p>
-    bank-on works!
-  </p>
+  <h6 class="text">
+    Home&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    <span class="green">Bank On</span>
+  </h6>
+  <div class="row left-column" style="margin-top: 50px;">
+    <div class="col-lg-9 col-xs-12">
+      <div class="image">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="title h3">Oil City receives Gift</p>
+            <p class="content">{{text1}}</p>
+            <p class="content">{{text2}}</p>
+            <p class="additional h6">Read more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-xs-12">
+      <p class="left-title">
+        NWBI 16.91
+        <img src="assets/images/bank-on/arrow-up.svg" class="img-fluid icon">
+        0.19 (1.14%)
+      </p>
+      <div class="" style="margin-bottom: 15px;">
+        <p class="h6 green">Photo of the day</p>
+        <div class="paragraph">
+          <img src="assets/images/bank-on/photo.jpg" class="img-fluid" alt="Responsive image">
+          <div class="text-put">
+            <h6 class="text green">Job well done!</h6>
+          </div>
+        </div>
+      </div>
+      <p class="h6 green">Happy birthday!</p>
+      <div class="row">
+        <div class="col-4">
+          <img src="assets/images/bank-on/Jane.jpg" class="img-fluid avatar">
+        </div>
+        <div class="col-8">
+          <h6 style="margin-bottom: 5px !important;">Jane Johnson</h6>
+          <h6 class="text">Sales representative</h6>
+          <img src="{{img}}" class="img-fluid icons" *ngFor="let img of imgs">
+        </div>
+      </div>
+      <nav aria-label="pagination">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left green"></i></a></li>
+          <li class="page-item"><a class="page-link"><span class="green text">1 of 6</span></a></li>
+          <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <hr />
 </div>
 
 <app-footer></app-footer>
