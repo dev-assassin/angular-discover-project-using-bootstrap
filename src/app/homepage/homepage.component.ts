@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -24,7 +25,7 @@ export class HomepageComponent implements OnInit {
   lists: any;
   texts: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.lists = [
       {
         img: 'assets/images/article1.jpg',
@@ -67,6 +68,12 @@ export class HomepageComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 
 }

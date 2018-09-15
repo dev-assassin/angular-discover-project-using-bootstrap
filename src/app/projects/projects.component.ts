@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -24,7 +25,7 @@ export class ProjectsComponent implements OnInit {
   };
   cards: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.projects = [
       'My assignments (61)', 'My Recent Activity', 'My Schedule'
     ];
@@ -117,6 +118,12 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 
 }

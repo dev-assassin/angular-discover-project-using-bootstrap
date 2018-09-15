@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-deposit',
@@ -29,7 +30,7 @@ export class DepositComponent implements OnInit {
   tools: any;
   events: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.communications = [
       {
         img: 'assets/images/communications/article1.jpg',
@@ -125,6 +126,12 @@ export class DepositComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 
 }

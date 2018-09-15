@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-communications',
@@ -31,7 +32,7 @@ export class CommunicationsComponent implements OnInit {
   };
   links: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.text1 = 'We manage the internal and external messaging for the bank. Anything from copywriting, Bank...';
     this.profiles = [
       {
@@ -146,6 +147,12 @@ export class CommunicationsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 
 }

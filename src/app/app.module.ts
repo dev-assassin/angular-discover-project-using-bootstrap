@@ -12,6 +12,7 @@ import { SummerAssociateComponent } from './articles/summer-associate/summer-ass
 import { CommunicationsComponent } from './department/communications/communications.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { DepositComponent } from './department/deposit/deposit.component';
+import { BankOnComponent } from './bank-on/bank-on.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DepositComponent } from './department/deposit/deposit.component';
     SummerAssociateComponent,
     CommunicationsComponent,
     ProjectsComponent,
-    DepositComponent
+    DepositComponent,
+    BankOnComponent
   ],
   imports: [
     BrowserModule,

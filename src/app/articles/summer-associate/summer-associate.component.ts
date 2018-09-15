@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-summer-associate',
@@ -15,7 +16,7 @@ export class SummerAssociateComponent implements OnInit {
   texts: any;
   chats: any;
 
-  constructor() {
+  constructor(private router: Router) {
     this.text1 = 'John Brittner is a summer associate at our Zelienople office. He\'s an upcoming senior at ' +
       'Penn State Behrend majoring in accounting and finance with a minor in economics.';
     this.text2 = 'Having trouble making student loan payments or keeping all of your loans in order? ' +
@@ -66,6 +67,12 @@ export class SummerAssociateComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 
   add_comment() {

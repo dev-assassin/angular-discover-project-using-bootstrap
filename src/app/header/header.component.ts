@@ -195,12 +195,29 @@ export class HeaderComponent implements OnInit {
     this.lists = [
       {
         titles: [
-          'HR Web Portal', 'BVS Training', 'Northwest Online Banking', 'My Custom Link'
+          {
+            text: 'HR Web Portal'
+          },
+          {
+            text: 'BVS Training'
+          },
+          {
+            text: 'Northwest Online Banking'
+          },
+          {
+            text: 'My Custom Link'
+          }
         ]
       },
       {
         titles: [
-          'My Custom Link'
+          {
+            text: 'My Custom Link'
+          },
+          {
+            router: '/home/bank_on',
+            text: 'Bank On'
+          }
         ]
       }
     ];
