@@ -382,7 +382,7 @@ export class HeaderComponent implements OnInit {
         alt: 'Signature',
       },
       {
-        img: 'assets/images/icons/icon-tools-POD.svg',
+        img: 'assets/images/icons/icon-printer.svg',
         alt: 'Northwest POD',
       },
       {

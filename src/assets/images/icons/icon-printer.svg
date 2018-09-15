@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.634 35.231">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #73665f;
+      }
+    </style>
+  </defs>
+  <g id="noun_Printer_1657330_000000" transform="translate(-10.871 -13.369)">
+    <path id="Path_653" data-name="Path 653" class="cls-1" d="M48.678,18.961c.56.457.359,1.761.359,2.906a.964.964,0,0,1-.965.965H25.646a.957.957,0,0,1-.955-1.047l-.015-7.455a.962.962,0,0,1,.96-.96H42.163a.958.958,0,0,1,.688.288Z" transform="translate(-7.166 0)"/>
+    <path id="Path_654" data-name="Path 654" class="cls-1" d="M49.2,64.872H28.69l.01,10.464H49.2Z" transform="translate(-9.25 -26.735)"/>
+    <path id="Path_655" data-name="Path 655" class="cls-1" d="M18.48,49.457H40.906a.963.963,0,0,1,.965.96v4.472h4.636a2,2,0,0,0,2-2.007V40.893a2,2,0,0,0-2-2.007H12.868a2,2,0,0,0-2,2.007V52.882a2,2,0,0,0,2,2.007h4.657l-.005-4.472a.958.958,0,0,1,.96-.955v-.005Z" transform="translate(0 -13.246)"/>
+  </g>
+</svg>

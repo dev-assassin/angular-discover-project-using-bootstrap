@@ -247,6 +247,10 @@ td {
     margin-right: 10px;
 }
 
+.edit {
+    width: 15px;
+}
+
 @media screen and (max-width: 768px) {
     .tables {
         display: none;
