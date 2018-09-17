@@ -98,7 +98,7 @@ tr {
 }
 
 @media screen and (max-width: 768px) {
-    .tables {
+    .tables, .left-column {
         display: none;
     }
 }

@@ -44,6 +44,46 @@
             </table>
           </div>
         </div>
+        <p class="green h6 space left-column">View all</p>
+        <!-- <div class="row">
+          <div class="col-md-4 col-xs-12 left-column" *ngFor="let card of cards">
+            <p class="h5 green">{{card.title}}</p>
+          </div>
+          
+        </div> -->
+        <table class="table table-striped tables">
+          <thead>
+            <tr>
+              <th class="green h5">MyNorthwest Checking</th>
+              <th class="green h5" style="vertical-align: middle;">MyNorthwest Interest Checking</th>
+              <th class="green h5">MyNorthwest Student Checking</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let line of lines">
+              <td>{{line.line1}}</td>
+              <td>{{line.line2}}</td>
+              <td>{{line.line3}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="space">
+        <p class="h5 green space">Free with all three accounts</p>
+        <table class="table table-striped left-column">
+          <tbody>
+            <tr *ngFor="let text of texts">
+              <td>{{text}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="space">
+        <p class="h5 green space">Optional services—fees may apply</p>
+        <div class="left-column">
+          <p class="inside">{{text2}}</p>
+          <p class="inside">{{text3}}</p>
+        </div>
       </div>
     </div>
     <div class="col-lg-3 col-xs-12">
@@ -58,10 +98,10 @@
           <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
         </ul>
       </nav>
-      <div class="left-column">
+      <div class="">
         <h5 class="personal">Tools<img src="assets/images/Edit icon.svg" class="img-fluid float-right edit"></h5>
         <div class="row">
-          <div class="col-sm-4" style="text-align: center;" *ngFor="let tool of tools">
+          <div class="col-4" style="text-align: center;" *ngFor="let tool of tools">
             <img src="{{tool.img}}" class="img-fluid svg">
             <h6 class="icon-text">{{tool.text}}</h6>
           </div>
