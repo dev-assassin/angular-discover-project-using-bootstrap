@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+<div class="container">
+  <h6 class="text">
+    Home&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    Bank&nbsp;&nbsp;
+    <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
+    <span class="green">Personal Checking</span>
+  </h6>
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-lg-9 col-xs-12">
+      <div class="image">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="title h3">We're launching a new ad campaign!</p>
+            <p class="inside">We’re giving current CD customers the opportunity to “Enjoy the sunny days ahead.”</p>
+            <!-- <p class="inside">opportunity to “Enjoy the sunny days ahead.”</p> -->
+            <p class="additional h6">Read more</p>
+          </div>
+        </div>
+      </div>
+      <div class="space">
+        <p class="h5 green">Current Deposit Rates</p>
+        <div class="row tables">
+          <div class="col-md-6">
+            <table class="table" border="0">
+              <tbody>
+                <tr *ngFor="let table of tables">
+                  <td class="float-left">{{table.des}}</td>
+                  <td class="float-right">{{table.per}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let rate of rates">
+                  <td class="float-left">{{rate.des}}</td>
+                  <td class="float-right">{{rate.per}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-xs-12">
+      <h5 class="personal">Checking Checking  at Northwest</h5>
+      <h6 class="text space">{{text1}}</h6>
+      <h5 class="personal">Related Departments</h5>
+      <h6 class="text" *ngFor="let department of departments">{{department}}</h6>
+      <nav aria-label="pagination space">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left green"></i></a></li>
+          <li class="page-item"><a class="page-link"><span class="green text">1 - 5 of 7</span></a></li>
+          <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
+        </ul>
+      </nav>
+      <div class="left-column">
+        <h5 class="personal">Tools<img src="assets/images/Edit icon.svg" class="img-fluid float-right edit"></h5>
+        <div class="row">
+          <div class="col-sm-4" style="text-align: center;" *ngFor="let tool of tools">
+            <img src="{{tool.img}}" class="img-fluid svg">
+            <h6 class="icon-text">{{tool.text}}</h6>
+          </div>
+        </div>
+        <nav aria-label="pagination">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left green"></i></a></li>
+            <li class="page-item"><a class="page-link"><span class="green text">1 - 6 of 11</span></a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right green"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>
+
+<app-footer></app-footer>

@@ -227,7 +227,19 @@ export class HeaderComponent implements OnInit {
       {
         title: 'Personal',
         texts: [
-          'Checking', 'Savings', 'CDs', 'IRAs and HSAs'
+          {
+            text: 'Checking',
+            link: '/home/bank/personal-checking'
+          },
+          {
+            text: 'Savings'
+          },
+          {
+            text: 'CDs'
+          },
+          {
+            text: 'IRAs and HSAs'
+          }
         ]
       }
     ];

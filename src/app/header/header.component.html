@@ -210,7 +210,7 @@
     <div class="col-md-3 offset-md-1 col-xs-12" *ngFor="let personal of personals">
       <div class="paragraph">
         <h6 class="header under_color">{{personal.title}}</h6>
-        <h6 class="text" *ngFor="let text of personal.texts">{{text}}</h6>
+        <h6 routerLink="{{text.link}}" class="text" *ngFor="let text of personal.texts" style="cursor: pointer;">{{text.text}}</h6>
       </div>
     </div>
     <div class="col-md-3 col-xs-12" *ngFor="let business of businesses">

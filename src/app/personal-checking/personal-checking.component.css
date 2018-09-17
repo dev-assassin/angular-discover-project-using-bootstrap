@@ -1,0 +1,104 @@
+.green {
+    color: green;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 400 !important;
+}
+
+hr {
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+}
+
+.image {
+    background-image: url("/assets/images/personal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+    margin-bottom: 40px;
+}
+
+.image::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#fff,#eee);
+	opacity: .4; 
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: green;
+    font-weight: bold;
+}
+
+.inside {
+    font-size: 14px;
+}
+
+.additional {
+    color: green;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.personal {
+    color: green;
+    border-bottom: 2px solid #73665F;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.space {
+    margin-bottom: 30px;
+}
+
+.page-link {
+    border: none !important;
+}
+
+.svg {
+    width: 20px;
+    margin: 15px 15px 0 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.edit {
+    width: 15px;
+}
+
+.icon-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+td {
+    padding: 8px;
+    font-size: 12px;
+    border-top: none !important;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .tables {
+        display: none;
+    }
+}
