@@ -6,7 +6,7 @@
     <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
     <span class="green">Bank On</span>
   </h6>
-  <div class="row left-column" style="margin-top: 50px;">
+  <div class="row" style="margin-top: 50px;">
     <div class="col-lg-9 col-xs-12">
       <div class="image">
         <div class="row">
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-xs-12">
+    <div class="col-lg-3 col-xs-12 left-column">
       <p class="left-title">
         NWBI 16.91
         <img src="assets/images/bank-on/arrow-up.svg" class="img-fluid icon">
@@ -53,6 +53,26 @@
         </ul>
       </nav>
     </div>
+  </div>
+  <div class="header" *ngFor="let image of images">
+    <p class="h5 green">
+      {{image.title}}
+      <span class="h6 green float-right left-column">Subscribe</span>
+    </p>
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let card of image.cards">
+          <div class="paragraph">
+            <img src="{{card.img}}" class="img-fluid" alt="Responsive image">
+            <div class="text-put">
+              <h6 class="text green">{{card.text}}</h6>
+              <p class="text">{{card.des}}</p>
+              <p class="green" style="font-weight: bold;">{{card.read}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper>
   </div>
   <hr />
 </div>

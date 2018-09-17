@@ -68,12 +68,10 @@ hr {
 .text-put {
     position: absolute;
     bottom: 0px;
-    text-align: center;
     width: 100%;
     background-color: #eee;
     opacity: .7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .icons {
