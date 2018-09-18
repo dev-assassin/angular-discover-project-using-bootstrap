@@ -92,7 +92,7 @@ a:hover {
 }
 
 .modal-dialog {
-    max-width: 1150px !important;
+    max-width: 850px !important;
     margin-top: 100px !important;
 }
 
@@ -111,13 +111,17 @@ a:hover {
 }
 
 .sub_title {
-    font-size: 16px;
-    color: #74C447 !important;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #74C447;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .text {
     font-size: 12px;
     font-weight: 400 !important;
+    margin-bottom: 10px !important;
 }
 
 .green {
@@ -140,9 +144,25 @@ a:hover {
     width: 100px;
     height: 100px;
 }
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
 
 .modal-body {
-    margin-top: 20px;
+    padding-top: 0px !important;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.under-line {
+    border-bottom: 2px solid #73665F;
+    padding-bottom: 5px;
 }
 
 .paragraph {
@@ -203,6 +223,10 @@ td {
     align-items: center;
 }
 
+.transparent {
+    opacity: .7;
+}
+
 .modal-backdrop {
     background-color: red;
 }
@@ -216,7 +240,7 @@ td {
     padding: 20px;
     position: absolute;
     z-index: 50;
-    margin-top: -100px;
+    margin-top: -90px;
     left: 0;
     right: 0;
 }
@@ -249,6 +273,7 @@ td {
 
 .edit {
     width: 15px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

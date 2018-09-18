@@ -38,6 +38,8 @@ export class HeaderComponent implements OnInit {
   lasts: any;
   svgs: any;
   projects: any;
+  text6: string;
+  iconsvgs: any;
   showHidden1: boolean;
   showHidden2: boolean;
   showHidden3: boolean;
@@ -147,12 +149,6 @@ export class HeaderComponent implements OnInit {
       },
       {
         titles: [
-          {
-            title: 'Security',
-            texts: [
-              'Fraud', 'Information Security', 'Physical Security'
-            ]
-          },
           {
             title: 'Support Services',
             texts: [
@@ -327,6 +323,18 @@ export class HeaderComponent implements OnInit {
       'Personalized Rate Quote Calculator', 'Referring Officers Page', 'Loan Navigator Knowledge Base',
       'Home Equity Playbook'
     ];
+    this.iconsvgs = [
+      {
+        img: 'assets/images/icons/icon-tools-rates.svg',
+        text: 'Rates',
+        class: 'transparent'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-manuals.svg',
+        text: 'Manuals & Knowledge',
+        class: 'transparent'
+      }
+    ];
     this.advisors = [
       {
         title: 'Northwest Advisors',
@@ -381,6 +389,7 @@ export class HeaderComponent implements OnInit {
     this.insures = [
       'Property & Casualty', 'Life, Disability and Long-term Care', 'Employee Benefits'
     ];
+    this.text6 = 'Drag a tool away (or click bin icon) to remove it from My Tools';
     this.lasts = [
       {
         texts: [
