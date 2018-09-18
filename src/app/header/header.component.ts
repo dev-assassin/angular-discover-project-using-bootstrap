@@ -40,6 +40,11 @@ export class HeaderComponent implements OnInit {
   projects: any;
   text6: string;
   iconsvgs: any;
+  text7: string;
+  sptools: any;
+  text8: string;
+  groups: any;
+  text9: string;
   showHidden1: boolean;
   showHidden2: boolean;
   showHidden3: boolean;
@@ -333,6 +338,39 @@ export class HeaderComponent implements OnInit {
         img: 'assets/images/icons/icon-tools-manuals.svg',
         text: 'Manuals & Knowledge',
         class: 'transparent'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-policies.svg',
+        text: 'Policies',
+        class: 'transparent'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-signature.svg',
+        text: 'Signature',
+        class: 'transparent'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-account.svg',
+        text: 'Account Processing',
+        class: 'transparent'
+      },
+      {
+        move: 'assets/images/icons/icon-move.svg',
+        img: 'assets/images/icons/icon-tools-operations.svg',
+        bin: 'assets/images/icons/icon-bin.svg',
+        text: 'Northwest Operations',
+      },
+      {
+        move: 'assets/images/icons/icon-move.svg',
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        bin: 'assets/images/icons/icon-bin.svg',
+        text: 'Custom Tool',
+      },
+      {
+        move: 'assets/images/icons/icon-move.svg',
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        bin: 'assets/images/icons/icon-bin.svg',
+        text: 'Custom Tool',
       }
     ];
     this.advisors = [
@@ -452,6 +490,87 @@ export class HeaderComponent implements OnInit {
         alt: 'Custom Tool',
       }
     ];
+    this.text7 = 'Drag a tool (or click + icon) to add it to My Tools';
+    this.sptools = [
+      {
+        img: 'assets/images/icons/icon-tools-POD.svg',
+        text: 'Northwest POD'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-manuals.svg',
+        text: 'Manuals & Knowledge'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-policies.svg',
+        text: 'Policies'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-signature.svg',
+        text: 'Signature'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        text: 'Custom Tool'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-operations.svg',
+        text: 'Northwest Operations'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        text: 'Custom Tool'
+      },
+      {
+        img: 'assets/images/icons/icon-tools-custom.svg',
+        text: 'Custom Tool'
+      }
+    ];
+    this.text8 = 'Drag a link away (or click bin icon) to remove it from My Links';
+    this.groups = [
+      {
+        class: 'h6 text transparent',
+        text: 'Rates'
+      },
+      {
+        class: 'h6 text transparent',
+        text: 'Manuals & Knowledge Bases'
+      },
+      {
+        class: 'h6 text transparent',
+        text: 'Policies'
+      },
+      {
+        drag: 'assets/images/icons/icon-drag.svg',
+        text: 'Signature',
+        class: 'h6 text',
+        delete: 'assets/images/icons/icon-bin.svg'
+      },
+      {
+        drag: 'assets/images/icons/icon-drag.svg',
+        text: 'Northwest POD',
+        class: 'h6 text',
+        delete: 'assets/images/icons/icon-bin.svg'
+      },
+      {
+        drag: 'assets/images/icons/icon-drag.svg',
+        text: 'Account Processing Manual',
+        class: 'h6 text',
+        delete: 'assets/images/icons/icon-bin.svg'
+      },
+      {
+        drag: 'assets/images/icons/icon-drag.svg',
+        text: 'Northwest Operations Manual',
+        class: 'h6 text',
+        delete: 'assets/images/icons/icon-bin.svg'
+      },
+      {
+        drag: 'assets/images/icons/icon-drag.svg',
+        text: 'Custom tool',
+        class: 'h6 text',
+        delete: 'assets/images/icons/icon-bin.svg'
+      }
+    ];
+    this.text9 = 'Drag a link (or click + icon) to add it to My Links';
     this.showHidden1 = false;
     this.showHidden2 = false;
     this.showHidden3 = false;

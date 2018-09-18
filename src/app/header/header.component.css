@@ -209,7 +209,8 @@ td {
 
 .svg {
     width: 30px;
-    margin: 15px 15px 0 15px;
+    /* margin: 15px 15px 0 15px; */
+    margin-top: 10px;
     text-align: center;
     vertical-align: middle;
     align-items: center;
@@ -224,11 +225,51 @@ td {
 }
 
 .transparent {
-    opacity: .7;
+    opacity: .5;
+}
+
+.move {
+    width: 10px;
+    opacity: .6;
+    float: left;
+}
+
+.drag {
+    width: 15px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 8px;
+    opacity: .8;
+}
+
+.delete {
+    width: 10px;
+    opacity: .6;
+    float: right;
+    margin-top: 5px;
+}
+
+.group {
+    vertical-align: middle;
+    align-items: center;
+}
+
+.bin {
+    width: 10px;
+    opacity: .6;
+    float: right;
+}
+
+.page-link {
+    border: none !important;
 }
 
 .modal-backdrop {
     background-color: red;
+}
+
+.btn {
+    width: 100px !important;
 }
 
 .project_link {

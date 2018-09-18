@@ -438,18 +438,61 @@
               <div class="row">
                 <div class="col-md-3" style="text-align: center;" *ngFor="let iconsvg of iconsvgs">
                   <div class="{{iconsvg.class}}">
+                    <img src="{{iconsvg.move}}" class="img-fluid move">
+                    <img src="{{iconsvg.bin}}" class="img-fluid bin">
                     <img src="{{iconsvg.img}}" class="img-fluid svg">
                     <h6 class="icon-text">{{iconsvg.text}}</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-xs-12"></div>
+            <div class="col-md-6 col-xs-12">
+              <h6 class="green under-line">Suggested Tools</h6>
+              <p class="h6 text transparent">{{text7}}</p>
+              <div class="row">
+                <div class="col-md-3" style="text-align: center;" *ngFor="let sptool of sptools">
+                  <div class="">
+                    <img src="assets/images/icons/icon-add.svg" class="img-fluid move">
+                    <img src="{{sptool.img}}" class="img-fluid svg">
+                    <h6 class="icon-text">{{sptool.text}}</h6>
+                  </div>
+                </div>
+              </div>
+              <nav aria-label="pagination">
+                <ul class="pagination">
+                  <li class="page-item"><p class="page-link" href="#"><i class="fa fa-angle-left green"></i></p></li>
+                  <li class="page-item"><p class="page-link"><span class="green text">1 of 8 of 28</span></p></li>
+                  <li class="page-item"><p class="page-link" href="#"><i class="fa fa-angle-right green"></i></p></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <h6 class="green under-line">My Links</h6>
+              <p class="h6 text transparent">{{text8}}</p>
+              <div style="margin-top: 20px;">
+                <div class="group" *ngFor="let group of groups">
+                  <img src="{{group.drag}}" class="img-fluid drag">
+                  <span class="{{group.class}}">{{group.text}}</span>
+                  <img src="{{group.delete}}" class="img-fluid delete">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <h6 class="green under-line">Suggested Links</h6>
+              <p class="h6 text transparent">{{text9}}</p>
+              <div style="margin-top: 20px;">
+                <div class="group" *ngFor="let group of groups">
+                  <img src="{{group.drag}}" class="img-fluid drag">
+                  <span class="{{group.class}}">{{group.text}}</span>
+                  <img src="{{group.delete}}" class="img-fluid delete">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-success">Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
