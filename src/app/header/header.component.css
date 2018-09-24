@@ -3,6 +3,16 @@
     margin-bottom: 40px;
 }
 
+.discover-logo {
+    float: left;
+    padding: 30px;
+    margin: -15px;
+}
+
+.discover-logo .logo {
+    width: 248px;
+}
+
 a img {
     width: 200px;
     margin-right: 20px;
@@ -34,6 +44,8 @@ a:hover {
     /* font-weight: bold; */
     float: right;
     font-size: 22px;
+    padding: 30px;
+    margin: -15px;
 }
 
 .personal span {
@@ -281,7 +293,7 @@ td {
     padding: 20px;
     position: absolute;
     z-index: 50;
-    margin-top: -90px;
+    margin-top: -107px;
     left: 0;
     right: 0;
 }
