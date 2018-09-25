@@ -20,31 +20,37 @@
   </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light container relative">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li (mouseover)="activetoggle3($event)" [ngStyle]="{'background-color': showHidden3 ? '#eee' : ''}">
-        <a>Bank</a>
-      </li>
-      <li (mouseover)="activetoggle4($event)" [ngStyle]="{'background-color': showHidden4 ? '#eee' : ''}">
-        <a>Borrow</a>
-      </li>
-      <li (mouseover)="activetoggle5($event)" [ngStyle]="{'background-color': showHidden5 ? '#eee' : ''}">
-        <a>Invest</a>
-      </li>
-      <li class="last" (mouseover)="activetoggle6($event)" [ngStyle]="{'background-color': showHidden6 ? '#eee' : ''}">
-        <a>Insure</a>
-      </li>
-    </ul>
-    <form class="form-inline inner-addon right-addon">
-      <i class="fa fa-search" (click)="search()"></i>
-      <input type="search" class="form-control" placeholder="What are you looking for?">
-      <i class="fa fa-angle-down arrow" style="margin-top: -15px;"></i>
-    </form>
+    <div class="row">
+      <div class="col-md-6 col-xs-12 menu-container">
+        <ul class="navbar-nav main-menu">
+          <li (mouseover)="activetoggle3($event)" [ngStyle]="{'background-color': showHidden3 ? '#eee' : ''}">
+            <a class="relative">Bank</a>
+          </li>
+          <li (mouseover)="activetoggle4($event)" [ngStyle]="{'background-color': showHidden4 ? '#eee' : ''}">
+            <a>Borrow</a>
+          </li>
+          <li (mouseover)="activetoggle5($event)" [ngStyle]="{'background-color': showHidden5 ? '#eee' : ''}">
+            <a>Invest</a>
+          </li>
+          <li class="last" (mouseover)="activetoggle6($event)" [ngStyle]="{'background-color': showHidden6 ? '#eee' : ''}">
+            <a>Insure</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-5 offset-md-1 col-xs-12" style="margin-top: 10px;">
+        <form class="form-inline inner-addon right-addon">
+          <i class="fa fa-search" (click)="search()"></i>
+          <input type="search" class="form-control" placeholder="What are you looking for?">
+          <i class="fa fa-angle-down arrow search-arrow"></i>
+        </form>
+      </div>
+    </div>
   </div>
 </nav>
 

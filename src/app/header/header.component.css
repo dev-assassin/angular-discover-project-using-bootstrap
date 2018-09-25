@@ -19,9 +19,28 @@ a img {
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
     margin-right: 20px;
+    border-left: 5px solid #085B02;
+}
+
+.relative {
+    position: relative;
+}
+
+.menu-container {
+    position: static;
+}
+
+.main-menu {
+    padding-left: -30px;
+}
+
+.main-menu > li > a {
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 19px;
+    color: #2B2E35;
+    text-align: center;
 }
 
 a {
@@ -63,7 +82,7 @@ a:hover {
 }
 
 .navbar-nav li {
-    margin-right: 80px;
+    margin-right: 40px;
 }
 
 .navbar-nav {
@@ -71,7 +90,8 @@ a:hover {
 }
 
 .form-inline .form-control {
-    width: 250px !important;
+    /* width: 250px !important; */
+    width: 100%;
     margin-top: -10px;
 }
 
@@ -86,12 +106,20 @@ a:hover {
     cursor: pointer;
 }
 
+.search-arrow {
+    position: absolute;
+    right: 0;
+    margin-top: -10px;
+}
+
 .right-addon .fa-search {
     right: 20px;
     margin-top: -10px;
 }
 
-.right-addon input { padding-right: 30px; }
+.right-addon input {
+    padding-right: 30px;
+}
 
 .form-control {
     border: none !important;
@@ -335,6 +363,9 @@ td {
     }
     .top-header {
         margin: 20px 0 20px 0;
+    }
+    .discover-logo .logo {
+        width: 100px;
     }
 }
 
