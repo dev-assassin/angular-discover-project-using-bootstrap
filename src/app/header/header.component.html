@@ -43,10 +43,10 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-5 offset-md-1 col-xs-12" style="margin-top: 10px;">
-        <form class="form-inline inner-addon right-addon">
-          <i class="fa fa-search" (click)="search()"></i>
-          <input type="search" class="form-control" placeholder="What are you looking for?">
+      <div class="col-md-5 offset-md-1 col-xs-12" [ngStyle]="{'background-color': showHidden7 ? '#eee' : ''}" style="padding-top: 15px;">
+        <form class="form-inline inner-addon right-addon" (mouseover)="activetoggle7($event)">
+          <img src="assets/images/icon-search.svg" class="fa fa-search">
+          <input type="search" class="form-control" placeholder="What are you looking for?" [ngStyle]="{'background-color': showHidden7 ? '#eee' : ''}">
           <i class="fa fa-angle-down arrow search-arrow"></i>
         </form>
       </div>
@@ -473,12 +473,18 @@
               <h6 class="green under-line">Suggested Links</h6>
               <p class="h6 text transparent">{{text9}}</p>
               <div style="margin-top: 20px;">
-                <div class="group" *ngFor="let group of groups">
-                  <img src="{{group.drag}}" class="img-fluid drag">
-                  <span class="{{group.class}}">{{group.text}}</span>
-                  <img src="{{group.delete}}" class="img-fluid delete">
+                <div class="group" *ngFor="let suglink of suglinks">
+                  <img src="assets/images/icons/icon-add.svg" class="img-fluid drag">
+                  <span class="h6 text">{{suglink}}</span>
                 </div>
               </div>
+              <nav aria-label="pagination">
+                <ul class="pagination">
+                  <li class="page-item"><p class="page-link" href="#"><i class="fa fa-angle-left green"></i></p></li>
+                  <li class="page-item"><p class="page-link"><span class="green text">1 of 5 of 16</span></p></li>
+                  <li class="page-item"><p class="page-link" href="#"><i class="fa fa-angle-right green"></i></p></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -487,6 +493,18 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!--Search Modal1-->
+<div class="container searchModal1" id="search-autosuggest" [ngStyle]="{'display': showHidden7 ? 'block' : 'none'}">
+  <div class="row" *ngFor="let searchModal of searchModals">
+    <div class="col-2" style="margin-right: -20px;">
+      <img src="{{searchModal.img}}" class="img-fluid edit" style="margin-top: -10px;">
+    </div>
+    <div class="col-10">
+      <p class="h6" style="margin-left: -20px;">{{searchModal.text}}</p>
     </div>
   </div>
 </div>

@@ -45,12 +45,15 @@ export class HeaderComponent implements OnInit {
   text8: string;
   groups: any;
   text9: string;
+  suglinks: any;
+  searchModals: any;
   showHidden1: boolean;
   showHidden2: boolean;
   showHidden3: boolean;
   showHidden4: boolean;
   showHidden5: boolean;
   showHidden6: boolean;
+  showHidden7: boolean;
 
   constructor() {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
@@ -571,12 +574,38 @@ export class HeaderComponent implements OnInit {
       }
     ];
     this.text9 = 'Drag a link (or click + icon) to add it to My Links';
+    this.suglinks = [
+      'Northwest at work', 'Careers', 'Work schedule', 'Bank On', 'Contacts'
+    ];
+    this.searchModals = [
+      {
+        img: 'assets/images/search/linklist-link.svg',
+        text: 'Northwest at work'
+      },
+      {
+        img: 'assets/images/search/linklist-article.svg',
+        text: 'Summer Associate Spotlight: Brooke Buzynski'
+      },
+      {
+        img: 'assets/images/search/linklist-doc.svg',
+        text: 'Annual Report 2018.pdf'
+      },
+      {
+        img: 'assets/images/search/linklist-doc.svg',
+        text: 'Do you work more than 39 hours a week.doc'
+      },
+      {
+        img: 'assets/images/search/linklist-manual.svg',
+        text: 'Working Etiquette 2018 v1.0.13.pdf'
+      }
+    ];
     this.showHidden1 = false;
     this.showHidden2 = false;
     this.showHidden3 = false;
     this.showHidden4 = false;
     this.showHidden5 = false;
     this.showHidden6 = false;
+    this.showHidden7 = false;
   }
 
   ngOnInit() {
@@ -590,6 +619,7 @@ export class HeaderComponent implements OnInit {
     this.showHidden4 = false;
     this.showHidden5 = false;
     this.showHidden6 = false;
+    this.showHidden7 = false;
   }
 
   activetoggle2(event: any) {
@@ -599,6 +629,7 @@ export class HeaderComponent implements OnInit {
     this.showHidden4 = false;
     this.showHidden5 = false;
     this.showHidden6 = false;
+    this.showHidden7 = false;
   }
 
   activetoggle3(event: any) {
@@ -608,6 +639,7 @@ export class HeaderComponent implements OnInit {
     this.showHidden4 = false;
     this.showHidden5 = false;
     this.showHidden6 = false;
+    this.showHidden7 = false;
   }
 
   activetoggle4(event: any) {
@@ -617,6 +649,7 @@ export class HeaderComponent implements OnInit {
     this.showHidden3 = false;
     this.showHidden5 = false;
     this.showHidden6 = false;
+    this.showHidden7 = false;
   }
 
   activetoggle5(event: any) {
@@ -626,6 +659,7 @@ export class HeaderComponent implements OnInit {
     this.showHidden3 = false;
     this.showHidden4 = false;
     this.showHidden6 = false;
+    this.showHidden7 = false;
   }
 
   activetoggle6(event: any) {
@@ -635,6 +669,18 @@ export class HeaderComponent implements OnInit {
     this.showHidden3 = false;
     this.showHidden4 = false;
     this.showHidden5 = false;
+    this.showHidden7 = false;
+  }
+
+  activetoggle7(event: any) {
+    this.showHidden7 = !this.showHidden7;
+    this.showHidden1 = false;
+    this.showHidden2 = false;
+    this.showHidden3 = false;
+    this.showHidden4 = false;
+    this.showHidden5 = false;
+    this.showHidden6 = false;
+    console.log('--------');
   }
 
   // mouseHovering1() {

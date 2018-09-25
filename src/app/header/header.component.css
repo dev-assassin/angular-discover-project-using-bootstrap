@@ -32,7 +32,8 @@ a img {
 }
 
 .main-menu {
-    padding-left: -30px;
+    margin-left: -16px;
+    padding-top: 10px;
 }
 
 .main-menu > li > a {
@@ -90,9 +91,7 @@ a:hover {
 }
 
 .form-inline .form-control {
-    /* width: 250px !important; */
     width: 100%;
-    margin-top: -10px;
 }
 
 .inner-addon { 
@@ -109,12 +108,12 @@ a:hover {
 .search-arrow {
     position: absolute;
     right: 0;
-    margin-top: -10px;
+    color: #2B2E35;
 }
 
 .right-addon .fa-search {
     right: 20px;
-    margin-top: -10px;
+    width: 40px;
 }
 
 .right-addon input {
@@ -124,11 +123,11 @@ a:hover {
 .form-control {
     border: none !important;
     border-radius: 0% !important;
-    border-bottom: 1px solid green !important;
+    border-bottom: 1px solid #085B02 !important;
 }
 
 .form-control:focus, .form-control:hover {
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #085B02;
 }
 
 .modal-dialog {
@@ -336,6 +335,16 @@ td {
     right: 0;
 }
 
+.searchModal1 {
+    background-color: #eee;
+    padding: 20px;
+    margin-top: -10px;
+    position: absolute;
+    width: 449px !important;
+    z-index: 50;
+    right: 202px;
+}
+
 .text-put {
     position: absolute;
     bottom: 0px;
@@ -366,6 +375,11 @@ td {
     }
     .discover-logo .logo {
         width: 100px;
+        text-align: center;
+    }
+    .searchModal1 {
+        right: 1px;
+        width: auto !important;
     }
 }
 
