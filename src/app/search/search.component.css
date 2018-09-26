@@ -1,0 +1,93 @@
+.text {
+    font-size: 12px;
+    font-weight: 400 !important;
+}
+
+.green {
+    color: green;
+}
+
+hr {
+    margin-bottom: 30px !important;
+    margin-top: 80px !important;
+}
+
+a {
+    color: #333 !important;
+}
+
+#MainMenu {
+    margin-bottom: 30px;
+}
+
+.list-group.panel > .list-group-item {
+    border-bottom-right-radius: 4px;
+}
+
+.panel .list-group-item:hover, .panel > .list-group-item:not(.collapsed) {
+    color: #085B02 !important;
+}
+
+.panel > .list-group-item:not(.collapsed):after {
+    width: 4px;
+    bottom: 0;
+    height: auto;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.panel .list-group-item:after {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    bottom: 50%;
+    height: 0;
+    width: 0;
+    background-color: #085B02;
+    content: "";
+}
+
+.panel .list-group-item {
+    color: #000;
+    border: none;
+    position: relative;
+    padding: 6px 16px;
+}
+
+.list-group-submenu {
+    margin-left:20px;
+}
+
+.list-group-item-success {
+    background-color: #fff;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.collapse .list-group-item {
+    margin-left: 15px;
+}
+
+.document {
+    margin-bottom: 30px;
+}
+
+.doc {
+    font-weight: 400 !important;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .left-column {
+        display: none;
+    }
+}

@@ -686,7 +686,6 @@ export class HeaderComponent implements OnInit {
 
   onKeydown(event) {
     if (event.key === 'Enter') {
-      console.log(event);
       this.router.navigateByUrl('/home/search-result');
     }
   }
