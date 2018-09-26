@@ -5,7 +5,7 @@
     <i class="fa fa-angle-right"></i>&nbsp;&nbsp;
     <span class="green">Search Results</span>
   </p>
-  <div class="row" style="margin-top: 30px;">
+  <div class="row" style="margin-top: 60px;">
     <div class="col-md-3 col-xs-12 left-column">
       <p class="h5 green">Result Type</p>
       <div id="MainMenu">
@@ -72,8 +72,27 @@
       <p class="h5 green" id="MainMenu">Modified Date</p>
       <img src="assets/images/modified.jpg" class="img-fluid">
     </div>
-    <div class="col-md-6 col-xs-12"></div>
-    <div class="col-md-3 col-xs-12"></div>
+    <div class="col-md-9 col-xs-12">
+      <div class="row">
+        <div class="col-md-8">
+          <p class="h6 text">
+            32 search results for&nbsp;
+            <span class="h6 green">Northwest at work</span>&nbsp;&nbsp;
+            <i class="fa fa-close icon"></i>
+          </p>
+          <p class="h5 green border_line">Manual (3)</p>
+          <div class="row" *ngFor="let manual of manuals">
+            <div class="col-2" style="margin-right: -20px;">
+              <img src="{{manual.img}}" class="img-fluid edit">
+            </div>
+            <div class="col-10" style="margin-left: -20px;">
+              <p class="h6 cursor">{{manual.text}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
   </div>
   <hr />
 </div>

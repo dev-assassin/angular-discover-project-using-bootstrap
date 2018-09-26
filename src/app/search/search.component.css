@@ -86,6 +86,31 @@ a {
     margin-top: 15px;
 }
 
+.icon {
+    color: #73665F;
+    cursor: pointer;
+}
+
+.border_line {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #73665F;
+}
+
+.edit {
+    width: 15px;
+}
+
+.cursor {
+    cursor: pointer;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 400 !important;
+}
+
+.cursor:hover {
+    color: #085B02;
+}
+
 @media screen and (max-width: 768px) {
     .left-column {
         display: none;
