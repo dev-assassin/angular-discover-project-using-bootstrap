@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { DepositComponent } from './department/deposit/deposit.component';
 import { BankOnComponent } from './bank-on/bank-on.component';
 import { PersonalCheckingComponent } from './personal-checking/personal-checking.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'home/projects', component: ProjectsComponent },
   { path: 'home/departments/deposit', component: DepositComponent },
   { path: 'home/bank_on', component: BankOnComponent },
-  { path: 'home/bank/personal-checking', component: PersonalCheckingComponent }
+  { path: 'home/bank/personal-checking', component: PersonalCheckingComponent },
+  { path: 'home/search-result', component: SearchComponent }
 ];
 
 

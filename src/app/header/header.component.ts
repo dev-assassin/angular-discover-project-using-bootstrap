@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -55,7 +56,7 @@ export class HeaderComponent implements OnInit {
   showHidden6: boolean;
   showHidden7: boolean;
 
-  constructor() {
+  constructor(private router: Router) {
     this.text1 = 'For 120 years, people have come to us with dreams and ambitions. Sometimes, the solutions aren’t ' +
       'so obvious or easy. Sometimes, we have to work a little harder to find the best answer and achieve success.';
     this.employees = [
@@ -584,7 +585,8 @@ export class HeaderComponent implements OnInit {
       },
       {
         img: 'assets/images/search/linklist-article.svg',
-        text: 'Summer Associate Spotlight: Brooke Buzynski'
+        text: 'Summer Associate Spotlight: Brooke Buzynski',
+        router: '/home/bank-on/summer-associate'
       },
       {
         img: 'assets/images/search/linklist-doc.svg',
@@ -680,59 +682,17 @@ export class HeaderComponent implements OnInit {
     this.showHidden4 = false;
     this.showHidden5 = false;
     this.showHidden6 = false;
-    console.log('--------');
   }
 
-  // mouseHovering1() {
-  //   this.showHidden1 = true;
-  // }
+  onKeydown(event) {
+    if (event.key === 'Enter') {
+      console.log(event);
+      this.router.navigateByUrl('/home/search-result');
+    }
+  }
 
-  // mouseLeft1() {
-  //   this.showHidden1 = false;
-  // }
-
-  // mouseHovering2() {
-  //   this.showHidden2 = true;
-  // }
-
-  // mouseLeft2() {
-  //   this.showHidden2 = false;
-  // }
-
-  // mouseHovering3() {
-  //   this.showHidden3 = true;
-  // }
-
-  // mouseLeft3() {
-  //   this.showHidden3 = false;
-  // }
-
-  // mouseHovering4() {
-  //   this.showHidden4 = true;
-  // }
-
-  // mouseLeft4() {
-  //   this.showHidden4 = false;
-  // }
-
-  // mouseHovering5() {
-  //   this.showHidden5 = true;
-  // }
-
-  // mouseLeft5() {
-  //   this.showHidden5 = false;
-  // }
-
-  // mouseHovering6() {
-  //   this.showHidden6 = true;
-  // }
-
-  // mouseLeft6() {
-  //   this.showHidden6 = false;
-  // }
-
-  serach() {
-    console.log('search');
+  search(event: any) {
+    this.router.navigateByUrl('/home/search-result');
   }
 
 }

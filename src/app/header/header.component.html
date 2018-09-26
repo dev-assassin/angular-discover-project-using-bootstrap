@@ -45,8 +45,9 @@
       </div>
       <div class="col-md-5 offset-md-1 col-xs-12" [ngStyle]="{'background-color': showHidden7 ? '#eee' : ''}" style="padding-top: 15px;">
         <form class="form-inline inner-addon right-addon" (mouseover)="activetoggle7($event)">
-          <img src="assets/images/icon-search.svg" class="fa fa-search">
-          <input type="search" class="form-control" placeholder="What are you looking for?" [ngStyle]="{'background-color': showHidden7 ? '#eee' : ''}">
+          
+          <input type="search" class="form-control" placeholder="What are you looking for?" [ngStyle]="{'background-color': showHidden7 ? '#eee' : ''}" (keydown)="onKeydown($event)">
+          <img src="assets/images/icon-search.svg" class="fa fa-search" routerLink="/home/search-result" (click)="search($event)">
           <i class="fa fa-angle-down arrow search-arrow"></i>
         </form>
       </div>
@@ -504,7 +505,7 @@
       <img src="{{searchModal.img}}" class="img-fluid edit" style="margin-top: -10px;">
     </div>
     <div class="col-10">
-      <p class="h6" style="margin-left: -20px;">{{searchModal.text}}</p>
+      <p class="h6 project_link" style="margin-left: -20px;" routerLink="{{searchModal.router}}">{{searchModal.text}}</p>
     </div>
   </div>
 </div>

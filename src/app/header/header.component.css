@@ -11,10 +11,6 @@
 
 .discover-logo .logo {
     width: 248px;
-}
-
-a img {
-    width: 200px;
     margin-right: 20px;
 }
 
@@ -114,6 +110,7 @@ a:hover {
 .right-addon .fa-search {
     right: 20px;
     width: 40px;
+    cursor: pointer;
 }
 
 .right-addon input {
@@ -313,6 +310,10 @@ td {
 
 .project_link {
     cursor: pointer;
+}
+
+.project_link:hover {
+    color: #085B02;
 }
 
 .logoModal {

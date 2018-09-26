@@ -14,6 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { DepositComponent } from './department/deposit/deposit.component';
 import { BankOnComponent } from './bank-on/bank-on.component';
 import { PersonalCheckingComponent } from './personal-checking/personal-checking.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PersonalCheckingComponent } from './personal-checking/personal-checking
     ProjectsComponent,
     DepositComponent,
     BankOnComponent,
-    PersonalCheckingComponent
+    PersonalCheckingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
